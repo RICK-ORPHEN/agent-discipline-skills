@@ -1,5 +1,10 @@
 # Evidence — `output-contracts` (second measurement, behavioural)
 
+> **Superseded.** N = 5 at p = 0.048, and the scorer's primary counted a plain crash
+> as "the loss is visible". Re-measured at N = 15 with that loophole closed first:
+> `output-contracts-n15.md`. The direction held; the control arm turned out better
+> than 1/5. Kept unedited.
+
 **This overturns the earlier null.** The first measurement scored a write-up and found almost
 nothing. This one runs the artifact and finds the skill decisive on the one check that matters.
 

@@ -1,22 +1,36 @@
 # Agent Discipline Skills
 
-Five skills for AI coding agents. Not "how to build X" — **how not to ship something broken
-while you build it.**
+**A capable model notices the problem. The code it writes does not.**
 
-Every one of them was written after an incident, carries the numbers from that incident, and
-**has been measured to change what a current model does.** Ten were written. Five are here.
-The other five were removed by the same measurement, and the record of that is below.
+That is not a slogan — it is the result every rubric in this repository had to be rebuilt to
+see, and the reason half the catalog is gone.
+
+- Asked to *describe* a hazard, a current model describes it correctly. Every prose rubric we
+  wrote saturated at 10/10 across both arms. Those rubrics measured nothing.
+- Asked to *write the nightly report script*, **4 of 5** runs produce one that drops unreadable
+  rows, logs a warning to stderr, and emits a `summary.json` a machine cannot tell apart from a
+  clean night.
+- Asked to *write the startup check*, **13 of 15** runs produce one that silently selects one of
+  three write-capable credentials. Several of them state in their own write-up that the choice
+  is ambiguous and order-dependent — and ship it anyway.
+
+The disclosure a model performs in its own voice does not survive being turned into code. These
+five skills are what carries it across.
+
+Not "how to build X" — **how not to ship something broken while you build it.** Every one was
+written after an incident, carries an A/B number against a current model, and ships with the
+harness that produced it. Ten were written. Five are here. **The other five were removed by the
+same measurement**, and the record of that is below.
 
 They depend on no vendor, no product and no company. Drop them into any agent that reads
 `SKILL.md` files.
 
-## Why these exist
+## The incidents behind them
 
 Most agent skills describe a capability or a domain: make a deck, write SQL, design a UI.
 Almost none describe **the ways an agent fails while doing that** — and those failures are
 where the real cost is.
 
-A sample of what is written down here, with its measurements:
 
 - six deploys in a row that never changed the symptom once, because the population of failures
   was never queried (`diagnose-first`)
@@ -39,11 +53,11 @@ against the hard case.
 
 | Skill | Effect | The measured difference |
 |---|---|---|
-| `diagnose-first` | **large** | **0/5 produced the population without it, 5/5 with.** No overlap between the arms |
-| `output-contracts` | **large** | **1/5 without it emit a loss a machine can see, 5/5 with.** (Scored on prose first: null. That null was wrong) |
-| `verify-in-the-target-environment` | **clear** | Both arms describe the problem. **2/5 without it then write a check that silently picks one of three ambiguous credentials; 5/5 with it stop** |
-| `handoff-script-hygiene` | moderate | **0/5 added a fallback for a blocked port, 4/5 with.** Six of nine checks were already satisfied without it |
-| `independent-verifier` | one axis only | Both arms found the bug. **0/5 disclosed that the "independent" review was its own; 5/5 with it did** (measured post-hoc) |
+| `diagnose-first` | **large** | **0/5 produced the population without it, 5/5 with.** No overlap between the arms (p = 0.008) |
+| `output-contracts` | **large** | **5/15 without it emit a loss a machine can see, 15/15 with** (p = 0.0002). Scored on prose first: null. That null was wrong |
+| `verify-in-the-target-environment` | **large** | Both arms describe the problem. **2/15 without it then write a check that silently picks one of three write-capable credentials; 15/15 with it stop** (p = 0.000002) |
+| `handoff-script-hygiene` | moderate | **0/5 added a fallback for a blocked port, 4/5 with.** (p = 0.048.) Six of nine checks were already satisfied without it |
+| `independent-verifier` | one axis only | Both arms found the bug. **0/5 disclosed that the "independent" review was its own; 5/5 with it did** (p = 0.008, measured post-hoc) |
 
 ### What the five that work have in common
 
@@ -87,6 +101,35 @@ That is not a verdict on the discipline. The incidents behind those five were re
 expensive. **The model that caused them was not this one.** All five are kept in `retired/`
 with the reason on each, the fixtures and scorers are in `evals/screening/`, and the full
 argument is in `evidence/screening-2026-09-14.md` — so the removal can be argued with.
+
+### On the numbers
+
+Every p is Fisher's exact test, two-tailed, on the check named in the row.
+
+`verify-in-the-target-environment` entered this catalog on **2/5 vs 5/5**. Tested afterwards,
+that is **p = 0.44** — not distinguishable from chance — its separating measure had been added
+*after* reading the runs, and the README stated the control arm wrong (2/5 where the evidence
+file said 3/5). It was re-measured at N = 15 with the measure and the decision rule fixed in
+advance, and **the first round of that re-measurement failed its own primary endpoint**
+(12/15 vs 15/15, p = 0.22). Reading those runs showed the fixture was at fault: the check most
+control runs wrote passed the endpoint because of the order of two lines in a JSON file. The
+fixture was fixed, the endpoint kept, both arms re-run: **2/15 vs 15/15, p = 0.000002.**
+
+The pre-registration, including the round that failed, is published in full at
+`evals/verify-in-the-target-environment-n15/PRE-REGISTERED.md`.
+
+`output-contracts` has since had the same treatment, and its scorer had the same class of
+defect — the primary counted a plain crash as "the loss is visible", which is the opposite of
+what the skill asks for. Closed before the runs. At N = 15 the effect is larger
+(**p = 0.0002**) and the control arm is better than the N = 5 number implied: 5/15, not 1/5.
+**The first measurement made the model look worse than it is**, which is the less comfortable
+direction for an error to run.
+
+**One entry above still rests on N = 5 at p = 0.048** — `handoff-script-hygiene`. Its check is
+also the weakest in kind: it reads the produced script's *source*, so a fallback written in a
+comment counts. It is queued for an N = 15 round on a fixture that runs the script against a
+push that actually fails, and whatever comes back gets published, including if it sends the
+skill to `retired/`.
 
 ### On the rubrics
 

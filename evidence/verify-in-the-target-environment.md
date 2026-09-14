@@ -1,5 +1,10 @@
 # Evidence — `verify-in-the-target-environment`
 
+> **Superseded.** The separating measure here was added after reading the runs, and at
+> N = 5 the difference is p = 0.44 — inside the noise. Re-measured at N = 15 with the
+> measure fixed in advance: `verify-in-the-target-environment-n15.md`. This file is kept
+> unedited because the first round being wrong is part of the record.
+
 **Result: null on the pre-registered rubric. A clean effect when the produced code is
 executed instead of read.** Both reported; which is which is stated.
 
