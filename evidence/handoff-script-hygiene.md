@@ -1,5 +1,9 @@
 # Evidence — `handoff-script-hygiene`
 
+> **Superseded.** N = 5, and the measure grepped the produced script's *source* — a
+> fallback written in a comment passed it. Re-measured by executing the script against a
+> `git` that fails port 22 for real: `handoff-script-hygiene-n15.md`. Kept unedited.
+
 **Does the skill change what the agent produces?** Measured, not asserted.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·

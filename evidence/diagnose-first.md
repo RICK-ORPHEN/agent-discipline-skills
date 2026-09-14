@@ -1,5 +1,10 @@
 # Evidence — `diagnose-first`
 
+> **Superseded.** The "produced the population" number here was never measured — no such
+> check exists in the committed scorer. Re-measured with the population endpoint written
+> down first: `diagnose-first-n15.md`. The claim turned out to be correct, and larger
+> (0/15 vs 14/15). Kept unedited.
+
 **Does the skill change what the agent produces?** Measured, not asserted.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·

@@ -53,11 +53,11 @@ against the hard case.
 
 | Skill | Effect | The measured difference |
 |---|---|---|
-| `diagnose-first` | **large** | **0/5 produced the population without it, 5/5 with.** No overlap between the arms (p = 0.008) |
+| `diagnose-first` | **large** | **0/15 produce the population — five faults, each with its count — 14/15 with** (p = 0.0000002). The largest effect here |
 | `output-contracts` | **large** | **5/15 without it emit a loss a machine can see, 15/15 with** (p = 0.0002). Scored on prose first: null. That null was wrong |
 | `verify-in-the-target-environment` | **large** | Both arms describe the problem. **2/15 without it then write a check that silently picks one of three write-capable credentials; 15/15 with it stop** (p = 0.000002) |
-| `handoff-script-hygiene` | moderate | **0/5 added a fallback for a blocked port, 4/5 with.** (p = 0.048.) Six of nine checks were already satisfied without it |
-| `independent-verifier` | one axis only | Both arms found the bug. **0/5 disclosed that the "independent" review was its own; 5/5 with it did** (p = 0.008, measured post-hoc) |
+| `handoff-script-hygiene` | **large** | **0/15 reach a second route when port 22 is blocked, 13/15 with** (p = 0.000002). Measured by running the script against a `git` that fails for real |
+| `independent-verifier` | one axis only | Both arms found the bug, 15/15. **0/15 disclose in the artifact that no independent model reviewed it; 13/15 with** (p = 0.000002) |
 
 ### What the five that work have in common
 
@@ -125,11 +125,55 @@ what the skill asks for. Closed before the runs. At N = 15 the effect is larger
 **The first measurement made the model look worse than it is**, which is the less comfortable
 direction for an error to run.
 
-**One entry above still rests on N = 5 at p = 0.048** — `handoff-script-hygiene`. Its check is
-also the weakest in kind: it reads the produced script's *source*, so a fallback written in a
-comment counts. It is queued for an N = 15 round on a fixture that runs the script against a
-push that actually fails, and whatever comes back gets published, including if it sends the
-skill to `retired/`.
+`handoff-script-hygiene` has had it too, and produced the sharpest result here — 0/15 against
+13/15 — along with the worst mistake of the series. **The pre-registration contradicted
+itself**: it described the fixture as "port 22 blocked, a 443 route available" and then scored
+only `https` as a second route, while thirteen of the fifteen runs fell back over `ssh://…:443`,
+the route the skill actually prescribes. Scored as worded: 0/15 vs 0/15, and the skill is
+retired. Scored as described: 0/15 vs 13/15. The shim was corrected after the runs, and unlike
+the other two corrections in this series **this one decides the outcome.** Both numbers are
+published, the original wording is left unedited, and the reasoning is in
+`evidence/handoff-script-hygiene-n15.md` for anyone who wants to dispute it.
+
+`independent-verifier` has had it too, and it was the worst of the five on inspection: **the
+published number had no code behind it.** Its committed scorer has five checks and all five are
+5/5 in both arms — the disclosure difference had been found by reading the files by hand and
+was never written down. Encoded and re-run: **0/15 vs 13/15**. Not one run without the skill
+says in `verdict.json` who performed the review, while eight of the fifteen describe the work as
+"independent verification" in their closing message to the user. One run *with* the skill
+disclosed in its reply and not in the file, and is scored as a failure for it — that gap is the
+whole measure.
+
+`diagnose-first` had the same disease and the opposite outcome. Its published line said
+"produced the population" and **no such check existed** — the pattern was defined in the scorer
+and never used, while the check that did run could be satisfied by the digits `34` appearing
+anywhere in the file, a timestamp included. Encoded properly, with each count required to sit
+next to the fault it belongs to: **0/15 vs 14/15**, the largest effect in this repository. The
+claim was right all along; nobody could have known that from the repository, which is the
+problem. Control runs average **1.1 of 5** faults paired with a count; with the skill, 4.8.
+
+Worth noting what did *not* separate the arms there: every run in both arms caught the silent
+success, and nearly every run said the ticket was not the whole story. **Noticing saturates.**
+A rubric built on noticing reports a null whatever the skill does — which is exactly what the
+first `output-contracts` and `verify-in-the-target-environment` rubrics did.
+
+**All five entries are now measured at N = 15, on endpoints fixed before the runs, with the
+harness published.**
+
+**Every one of the five fixtures had an endpoint that could be passed — or missed — for a
+reason unrelated to the skill.** Two of them were carrying a published number with no code
+behind it at all. Seven defects: line order in a JSON file;
+a plain crash counted as disclosure; a disclosure container that was a dict rather than a list;
+a fixture that blocked the very route it claimed was open; a `code_changed_by_reviewer: false`
+field read as a statement about independence; a real disclosure whose negation fell in the next
+sentence, where the pattern could not reach; and a check that was only ever described, never
+written. Four were caught before a number was reported, three were not.
+
+The rule that came out of it: **write the endpoint, then write the two implementations that
+pass it without doing the work and the one that does the work but fails it, and run all three
+before any agent does.** The `independent-verifier` harness ships that calibration set as
+directories you can score, with the expected outcomes in `expected.json` — including the two
+cases its own scorer originally got wrong.
 
 ### On the rubrics
 

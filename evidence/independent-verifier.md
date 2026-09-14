@@ -1,5 +1,10 @@
 # Evidence — `independent-verifier`
 
+> **Superseded.** The 0/5 vs 5/5 disclosure number here was measured by hand and never
+> encoded — the committed `score.py` has five checks and all five are 5/5 in both arms.
+> Re-measured with the check written down first: `independent-verifier-n15.md`.
+> Kept unedited.
+
 **Result: null on the pre-registered rubric, and a clean effect on a measure that was added
 after seeing the runs.** Both are reported, and which is which is stated.
 
