@@ -1,0 +1,124 @@
+# ════════════════════════════════════════════════════════════════════════
+# work-contract.yaml — the reference standard for shipping non-media deliverables
+#
+# Why it exists:
+#   Only the media pipeline was guarded by an output contract. Documents, sites and reports
+#   ran with no output check at all. Measured: zero output checks across every skill that
+#   produced a deck, a site or a report. The consequences were real — proposal bodies
+#   collapsing into a generic template, and SVG arrows disappearing in the PDF.
+#
+#   The destructive-command block list also lived only inside the media contract, and only
+#   media skills referenced it. Dangerous operations have nothing to do with the kind of
+#   deliverable, so they are lifted here and made common to every skill.
+#
+# Usage:
+#   python3 <resolved work_contract.py> check-cmd "<command>"
+#   python3 <resolved work_contract.py> verify --manifest manifest.json
+#
+# Principles:
+#   - The verdict is three-valued: PASS / DEGRADED / FAIL. DEGRADED is not success.
+#   - Never carry a degradation that changes the nature of the deliverable silently.
+#     Always tell the requester and ask how to handle it.
+#   - When you cannot decide, do not fill it in with a guess. Stop at unknown.
+#
+# This file is a starting point. Adapt archetypes and acceptance criteria to your work.
+# ════════════════════════════════════════════════════════════════════════
+
+version: "1.0.0"
+
+# ────────────────────────────────────────────────────────────────────────
+# 1. Irreversible operations — common to every skill
+# ────────────────────────────────────────────────────────────────────────
+irreversible_ops:
+  doctrine: >
+    No skill performs an operation that moves the system toward broken. If something is
+    missing, STOP and ask the requester in one line. The rule is: install the new one,
+    verify it, then remove the old one. Never improvise "delete something to fix the
+    environment."
+  block_patterns:
+    - pattern: "brew\\s+(uninstall|remove|rm)\\b"
+      reason: "Removing an existing tool. Install and verify the replacement first."
+    - pattern: "--with-\\w+"
+      reason: "Improvised custom builds. Forbidden."
+    - pattern: "pip\\s+uninstall\\b"
+      reason: "Same as above, for Python packages."
+    - pattern: "rm\\s+-rf\\s+/(usr|etc|opt|Library|System|bin|sbin)\\b"
+      reason: "Deleting a system path."
+    - pattern: "git\\s+push\\s+.*--force(-with-lease)?\\b"
+      reason: "Rewrites someone else's history."
+    - pattern: "git\\s+add\\s+-A\\b"
+      reason: "Stages everything in the tree, including files you never inspected."
+    - pattern: "DROP\\s+(TABLE|DATABASE|SCHEMA)\\b"
+      reason: "Irreversible schema loss. Rename or archive instead."
+    - pattern: "TRUNCATE\\s+TABLE\\b"
+      reason: "Irreversible data loss."
+  on_match: "BLOCKED — do not run it. Report the pattern and the reason, and ask the requester."
+
+# ────────────────────────────────────────────────────────────────────────
+# 2. Fallback policy — what may be carried through, and what must be disclosed
+# ────────────────────────────────────────────────────────────────────────
+fallback_policy:
+  may_proceed_silently:
+    - "Retrying a transient network failure"
+    - "Substituting an equivalent font or asset that does not change the meaning"
+    - "Reformatting whitespace or line endings"
+  must_disclose:
+    - "The deliverable changed in kind (a video became a still; audio disappeared)"
+    - "Sections, chapters or rows were dropped to make the numbers work"
+    - "Real data could not be fetched and sample data was used"
+    - "An asset failed to generate and the deliverable ships without it"
+    - "An acceptance criterion could not be evaluated"
+  rule: >
+    Anything in must_disclose returns DEGRADED. DEGRADED is not success.
+    Never report "100% complete" for it.
+
+# ────────────────────────────────────────────────────────────────────────
+# 3. Output acceptance criteria, by archetype
+# ────────────────────────────────────────────────────────────────────────
+archetypes:
+  document:
+    description: "Reports, policies, minutes, memos"
+    required:
+      - id: no-template-text
+        check: "No placeholder text remains (TBD, lorem ipsum, <name>, XXX)"
+      - id: addressee-present
+        check: "Where the document is addressed to someone, that name is not empty"
+      - id: claims-have-sources
+        check: "Every figure and every external claim carries a source or a stated premise"
+      - id: unverified-listed
+        check: "Anything that could not be verified is listed separately, not folded into the pass count"
+
+  deck:
+    description: "Proposals, pitch decks, plans"
+    required:
+      - id: no-template-text
+        check: "No placeholder text remains"
+      - id: no-prior-client-names
+        check: "No names from a previous engagement survive anywhere in the file"
+      - id: claims-have-sources
+        check: "Effect and outcome figures carry a source or a stated premise"
+      - id: one-idea-per-slide
+        check: "No slide carries more than one claim"
+
+  site:
+    description: "Sites, landing pages, dashboards"
+    required:
+      - id: no-dead-links
+        check: "Every internal link resolves"
+      - id: no-mock-data-unlabelled
+        check: "Any placeholder data is visibly labelled as such"
+      - id: responsive
+        check: "Renders without horizontal overflow at a narrow width"
+      - id: no-secrets
+        check: "No credentials, tokens or internal URLs appear in the shipped files"
+
+# ────────────────────────────────────────────────────────────────────────
+# 4. How the verdict is computed
+# ────────────────────────────────────────────────────────────────────────
+verdict:
+  FAIL: "One or more required checks failed"
+  DEGRADED: "All required checks passed, but something in must_disclose happened"
+  PASS: "All required checks passed and nothing in must_disclose happened"
+  unknown_handling: >
+    A check that could not be evaluated is neither a pass nor a failure. Count it in
+    "unverified" and report that number separately. Never add it to the pass count.
