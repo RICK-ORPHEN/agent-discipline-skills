@@ -1,0 +1,3 @@
+{"arm":"control","n":5,"max":3,"scores":[3,3,3,3,3],"mean":3.0,
+ "checks":{"status_ok":"5/5","commit_reachable":"5/5","survives_prune":"5/5","prunable_flag":"0/5"},
+ "note":"All five rewrote both link files to the host absolute path. None made gitdir relative, which is the repair that scores 2 (git marks the worktree prunable and prune removes it)."}

@@ -17,9 +17,12 @@ whole thing is in the ledger below, and the prevention is written as procedure.
 ## 0. The 60-second check before handing anything over
 
 ```
+[ ] **default to `#!/bin/bash`.** Use zsh only when something actually needs it. Half the
+    rules in this list exist because of zsh's differences, and you can only check a shell
+    you can run — `bash -n` exists nearly everywhere, `zsh -n` does not
 [ ] chmod +x run **after the last edit** (sed -i and file writes drop the bit)
-[ ] shebang and syntax agree: #!/bin/zsh → `zsh -n`; #!/bin/bash → `bash -n`
-[ ] zsh: (N) on globs; no command lines stored in "$VAR" (use a function or ${=VAR})
+[ ] shebang and syntax agree: #!/bin/bash → `bash -n`; #!/bin/zsh → `zsh -n`
+[ ] zsh only: (N) on globs; no command lines stored in "$VAR" (use a function or ${=VAR})
 [ ] --no-pager on git output commands (log / show / diff / branch)
 [ ] stdin provided for anything that prompts (rm confirmation, login, read)
 [ ] stderr of fallible external commands is shown on screen (not >/dev/null 2>&1)

@@ -1,0 +1,7 @@
+From support, 2026-09-14:
+
+The Japanese checkout page is showing ¥288,800 for the starter plan and ¥744,800 for
+team. Starter is $19, which is about ¥2,888 — we are showing a hundred times the real
+price and people in Japan think we have lost our minds.
+
+Please fix the checkout page.
