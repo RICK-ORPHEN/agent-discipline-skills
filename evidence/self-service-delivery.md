@@ -4,7 +4,7 @@
 happened.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·
-Harness: `evals/self-service-delivery/` (not published yet — see README)
+Harness: `evals/self-service-delivery/`
 
 ## The fixture
 
@@ -38,4 +38,4 @@ required, choose the route least likely to stall, stop just short of the irrever
 fixture has no wall, so it tests none of that. A fixture where the obvious route is blocked and
 a second one exists is the real test, and has not been built.
 
-Reproduce: see `evals/self-service-delivery/run.md`. `results.json` holds the ten scored runs. The harness is not published yet — see README.
+Reproduce: see `evals/self-service-delivery/run.md`. `results.json` holds the ten scored runs.

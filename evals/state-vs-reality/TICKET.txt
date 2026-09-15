@@ -1,0 +1,1 @@
+From support, 2026-09-14:\n\nSeveral customers say their data has not updated in weeks. The nightly sync reports\nsuccess every night and the status page has been green the whole time. The timeout\nretry count was already raised from 2 to 3 last month for a similar complaint.\n\nIs the sync working or not? Please tell us what is actually happening.\n

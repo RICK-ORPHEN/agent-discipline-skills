@@ -8,7 +8,7 @@
 **Does the skill change what the agent produces?** Measured, not asserted.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·
-Harness: `evals/diagnose-first/` (not published yet — see README)
+Harness: `evals/diagnose-first/`
 
 ## The fixture
 
@@ -79,4 +79,4 @@ than to the skill:
    phrasings and returned 0/5 in **both** arms. It was widened against the actual texts, and
    the widened pattern was confirmed to fire on control runs too before being adopted.
 
-Reproduce: see `evals/diagnose-first/run.md`. `results.json` holds the ten scored runs. The harness is not published yet — see README.
+Reproduce: see `evals/diagnose-first/run.md`. `results.json` holds the ten scored runs.

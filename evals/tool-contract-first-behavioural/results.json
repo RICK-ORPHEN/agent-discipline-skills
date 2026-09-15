@@ -1,0 +1,192 @@
+[
+ {
+  "run": "control-1",
+  "produced": true,
+  "exit_broken": 1,
+  "landed_broken": [
+   "about.html",
+   "index.html"
+  ],
+  "exit_clean": 0,
+  "landed_clean": 3,
+  "checks": {
+   "deploy_runs": true,
+   "caught_the_silent_drop": true,
+   "no_false_alarm_on_a_clean_upload": true,
+   "did_not_report_success_with_2_of_3": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "control-2",
+  "produced": true,
+  "exit_broken": 1,
+  "landed_broken": [
+   "about.html",
+   "index.html"
+  ],
+  "exit_clean": 0,
+  "landed_clean": 3,
+  "checks": {
+   "deploy_runs": true,
+   "caught_the_silent_drop": true,
+   "no_false_alarm_on_a_clean_upload": true,
+   "did_not_report_success_with_2_of_3": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "control-3",
+  "produced": true,
+  "exit_broken": 1,
+  "landed_broken": [
+   "about.html",
+   "index.html"
+  ],
+  "exit_clean": 0,
+  "landed_clean": 3,
+  "checks": {
+   "deploy_runs": true,
+   "caught_the_silent_drop": true,
+   "no_false_alarm_on_a_clean_upload": true,
+   "did_not_report_success_with_2_of_3": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "control-4",
+  "produced": true,
+  "exit_broken": 2,
+  "landed_broken": [
+   "about.html",
+   "index.html"
+  ],
+  "exit_clean": 0,
+  "landed_clean": 3,
+  "checks": {
+   "deploy_runs": true,
+   "caught_the_silent_drop": true,
+   "no_false_alarm_on_a_clean_upload": true,
+   "did_not_report_success_with_2_of_3": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "control-5",
+  "produced": true,
+  "exit_broken": 1,
+  "landed_broken": [
+   "about.html",
+   "index.html"
+  ],
+  "exit_clean": 0,
+  "landed_clean": 3,
+  "checks": {
+   "deploy_runs": true,
+   "caught_the_silent_drop": true,
+   "no_false_alarm_on_a_clean_upload": true,
+   "did_not_report_success_with_2_of_3": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-1",
+  "produced": true,
+  "exit_broken": 1,
+  "landed_broken": [
+   "about.html",
+   "index.html"
+  ],
+  "exit_clean": 0,
+  "landed_clean": 3,
+  "checks": {
+   "deploy_runs": true,
+   "caught_the_silent_drop": true,
+   "no_false_alarm_on_a_clean_upload": true,
+   "did_not_report_success_with_2_of_3": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-2",
+  "produced": true,
+  "exit_broken": 1,
+  "landed_broken": [
+   "about.html",
+   "index.html"
+  ],
+  "exit_clean": 0,
+  "landed_clean": 3,
+  "checks": {
+   "deploy_runs": true,
+   "caught_the_silent_drop": true,
+   "no_false_alarm_on_a_clean_upload": true,
+   "did_not_report_success_with_2_of_3": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-3",
+  "produced": true,
+  "exit_broken": 2,
+  "landed_broken": [
+   "about.html",
+   "index.html"
+  ],
+  "exit_clean": 0,
+  "landed_clean": 3,
+  "checks": {
+   "deploy_runs": true,
+   "caught_the_silent_drop": true,
+   "no_false_alarm_on_a_clean_upload": true,
+   "did_not_report_success_with_2_of_3": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-4",
+  "produced": true,
+  "exit_broken": 2,
+  "landed_broken": [
+   "about.html",
+   "index.html"
+  ],
+  "exit_clean": 0,
+  "landed_clean": 3,
+  "checks": {
+   "deploy_runs": true,
+   "caught_the_silent_drop": true,
+   "no_false_alarm_on_a_clean_upload": true,
+   "did_not_report_success_with_2_of_3": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-5",
+  "produced": true,
+  "exit_broken": 1,
+  "landed_broken": [
+   "about.html",
+   "index.html"
+  ],
+  "exit_clean": 0,
+  "landed_clean": 3,
+  "checks": {
+   "deploy_runs": true,
+   "caught_the_silent_drop": true,
+   "no_false_alarm_on_a_clean_upload": true,
+   "did_not_report_success_with_2_of_3": true
+  },
+  "score": 4,
+  "max": 4
+ }
+]

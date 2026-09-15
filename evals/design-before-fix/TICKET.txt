@@ -1,0 +1,5 @@
+From support, 2026-09-14:
+
+New users are not getting the welcome email. Signing up works, the account is created,
+but no mail ever arrives. Three people who signed up last week are still asking.
+Please fix it.

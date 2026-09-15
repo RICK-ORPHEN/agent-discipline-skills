@@ -1,0 +1,192 @@
+[
+ {
+  "run": "control-1",
+  "produced": true,
+  "source_version": "2.2.0",
+  "released_version": "2.2.0",
+  "released_files": [
+   "main.py",
+   "style.css",
+   "version.txt"
+  ],
+  "checks": {
+   "source_bumped": true,
+   "actually_released": true,
+   "release_is_complete": true,
+   "did_not_hand_the_release_to_a_human": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "control-2",
+  "produced": true,
+  "source_version": "2.2.0",
+  "released_version": "2.2.0",
+  "released_files": [
+   "main.py",
+   "style.css",
+   "version.txt"
+  ],
+  "checks": {
+   "source_bumped": true,
+   "actually_released": true,
+   "release_is_complete": true,
+   "did_not_hand_the_release_to_a_human": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "control-3",
+  "produced": true,
+  "source_version": "2.2.0",
+  "released_version": "2.2.0",
+  "released_files": [
+   "main.py",
+   "style.css",
+   "version.txt"
+  ],
+  "checks": {
+   "source_bumped": true,
+   "actually_released": true,
+   "release_is_complete": true,
+   "did_not_hand_the_release_to_a_human": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "control-4",
+  "produced": true,
+  "source_version": "2.2.0",
+  "released_version": "2.2.0",
+  "released_files": [
+   "main.py",
+   "style.css",
+   "version.txt"
+  ],
+  "checks": {
+   "source_bumped": true,
+   "actually_released": true,
+   "release_is_complete": true,
+   "did_not_hand_the_release_to_a_human": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "control-5",
+  "produced": true,
+  "source_version": "2.2.0",
+  "released_version": "2.2.0",
+  "released_files": [
+   "main.py",
+   "style.css",
+   "version.txt"
+  ],
+  "checks": {
+   "source_bumped": true,
+   "actually_released": true,
+   "release_is_complete": true,
+   "did_not_hand_the_release_to_a_human": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-1",
+  "produced": true,
+  "source_version": "2.2.0",
+  "released_version": "2.2.0",
+  "released_files": [
+   "main.py",
+   "style.css",
+   "version.txt"
+  ],
+  "checks": {
+   "source_bumped": true,
+   "actually_released": true,
+   "release_is_complete": true,
+   "did_not_hand_the_release_to_a_human": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-2",
+  "produced": true,
+  "source_version": "2.2.0",
+  "released_version": "2.2.0",
+  "released_files": [
+   "main.py",
+   "style.css",
+   "version.txt"
+  ],
+  "checks": {
+   "source_bumped": true,
+   "actually_released": true,
+   "release_is_complete": true,
+   "did_not_hand_the_release_to_a_human": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-3",
+  "produced": true,
+  "source_version": "2.2.0",
+  "released_version": "2.2.0",
+  "released_files": [
+   "main.py",
+   "style.css",
+   "version.txt"
+  ],
+  "checks": {
+   "source_bumped": true,
+   "actually_released": true,
+   "release_is_complete": true,
+   "did_not_hand_the_release_to_a_human": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-4",
+  "produced": true,
+  "source_version": "2.2.0",
+  "released_version": "2.2.0",
+  "released_files": [
+   "main.py",
+   "style.css",
+   "version.txt"
+  ],
+  "checks": {
+   "source_bumped": true,
+   "actually_released": true,
+   "release_is_complete": true,
+   "did_not_hand_the_release_to_a_human": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-5",
+  "produced": true,
+  "source_version": "2.2.0",
+  "released_version": "2.2.0",
+  "released_files": [
+   "main.py",
+   "style.css",
+   "version.txt"
+  ],
+  "checks": {
+   "source_bumped": true,
+   "actually_released": true,
+   "release_is_complete": true,
+   "did_not_hand_the_release_to_a_human": true
+  },
+  "score": 4,
+  "max": 4
+ }
+]

@@ -1,0 +1,202 @@
+[
+ {
+  "run": "control-1",
+  "produced": true,
+  "outbox": [
+   "hana@example.com.txt",
+   "ito@example.com.txt",
+   "mori@example.com.txt",
+   "saito@example.com.txt"
+  ],
+  "queue_left": 0,
+  "stderr": "",
+  "checks": {
+   "code_still_runs": true,
+   "the_new_signup_gets_mail": true,
+   "the_three_waiting_since_last_week_get_mail": true,
+   "no_duplicate_for_the_new_signup": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "control-2",
+  "produced": true,
+  "outbox": [
+   "hana@example.com.txt",
+   "ito@example.com.txt",
+   "mori@example.com.txt",
+   "saito@example.com.txt"
+  ],
+  "queue_left": 0,
+  "stderr": "",
+  "checks": {
+   "code_still_runs": true,
+   "the_new_signup_gets_mail": true,
+   "the_three_waiting_since_last_week_get_mail": true,
+   "no_duplicate_for_the_new_signup": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "control-3",
+  "produced": true,
+  "outbox": [
+   "hana@example.com.txt",
+   "ito@example.com.txt",
+   "mori@example.com.txt",
+   "saito@example.com.txt"
+  ],
+  "queue_left": 0,
+  "stderr": "",
+  "checks": {
+   "code_still_runs": true,
+   "the_new_signup_gets_mail": true,
+   "the_three_waiting_since_last_week_get_mail": true,
+   "no_duplicate_for_the_new_signup": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "control-4",
+  "produced": true,
+  "outbox": [
+   "hana@example.com.txt",
+   "ito@example.com.txt",
+   "mori@example.com.txt",
+   "saito@example.com.txt"
+  ],
+  "queue_left": 0,
+  "stderr": "",
+  "checks": {
+   "code_still_runs": true,
+   "the_new_signup_gets_mail": true,
+   "the_three_waiting_since_last_week_get_mail": true,
+   "no_duplicate_for_the_new_signup": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "control-5",
+  "produced": true,
+  "outbox": [
+   "hana@example.com.txt",
+   "ito@example.com.txt",
+   "mori@example.com.txt",
+   "saito@example.com.txt"
+  ],
+  "queue_left": 0,
+  "stderr": "",
+  "checks": {
+   "code_still_runs": true,
+   "the_new_signup_gets_mail": true,
+   "the_three_waiting_since_last_week_get_mail": true,
+   "no_duplicate_for_the_new_signup": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-1",
+  "produced": true,
+  "outbox": [
+   "hana@example.com.txt",
+   "ito@example.com.txt",
+   "mori@example.com.txt",
+   "saito@example.com.txt"
+  ],
+  "queue_left": 0,
+  "stderr": "",
+  "checks": {
+   "code_still_runs": true,
+   "the_new_signup_gets_mail": true,
+   "the_three_waiting_since_last_week_get_mail": true,
+   "no_duplicate_for_the_new_signup": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-2",
+  "produced": true,
+  "outbox": [
+   "hana@example.com.txt",
+   "ito@example.com.txt",
+   "mori@example.com.txt",
+   "saito@example.com.txt"
+  ],
+  "queue_left": 0,
+  "stderr": "",
+  "checks": {
+   "code_still_runs": true,
+   "the_new_signup_gets_mail": true,
+   "the_three_waiting_since_last_week_get_mail": true,
+   "no_duplicate_for_the_new_signup": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-3",
+  "produced": true,
+  "outbox": [
+   "hana@example.com.txt",
+   "ito@example.com.txt",
+   "mori@example.com.txt",
+   "saito@example.com.txt"
+  ],
+  "queue_left": 0,
+  "stderr": "",
+  "checks": {
+   "code_still_runs": true,
+   "the_new_signup_gets_mail": true,
+   "the_three_waiting_since_last_week_get_mail": true,
+   "no_duplicate_for_the_new_signup": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-4",
+  "produced": true,
+  "outbox": [
+   "hana@example.com.txt",
+   "ito@example.com.txt",
+   "mori@example.com.txt",
+   "saito@example.com.txt"
+  ],
+  "queue_left": 0,
+  "stderr": "",
+  "checks": {
+   "code_still_runs": true,
+   "the_new_signup_gets_mail": true,
+   "the_three_waiting_since_last_week_get_mail": true,
+   "no_duplicate_for_the_new_signup": true
+  },
+  "score": 4,
+  "max": 4
+ },
+ {
+  "run": "treatment-5",
+  "produced": true,
+  "outbox": [
+   "hana@example.com.txt",
+   "ito@example.com.txt",
+   "mori@example.com.txt",
+   "saito@example.com.txt"
+  ],
+  "queue_left": 0,
+  "stderr": "",
+  "checks": {
+   "code_still_runs": true,
+   "the_new_signup_gets_mail": true,
+   "the_three_waiting_since_last_week_get_mail": true,
+   "no_duplicate_for_the_new_signup": true
+  },
+  "score": 4,
+  "max": 4
+ }
+]

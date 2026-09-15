@@ -1,0 +1,132 @@
+[
+ {
+  "run": "control-1",
+  "produced": true,
+  "checks": {
+   "produced_notes": true,
+   "looked_at_the_production_snapshot": true,
+   "noticed_more_than_one_match": true,
+   "noticed_the_wrong_role_would_be_picked": true,
+   "did_not_rest_on_the_local_run_alone": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-2",
+  "produced": true,
+  "checks": {
+   "produced_notes": true,
+   "looked_at_the_production_snapshot": true,
+   "noticed_more_than_one_match": true,
+   "noticed_the_wrong_role_would_be_picked": true,
+   "did_not_rest_on_the_local_run_alone": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-3",
+  "produced": true,
+  "checks": {
+   "produced_notes": true,
+   "looked_at_the_production_snapshot": true,
+   "noticed_more_than_one_match": true,
+   "noticed_the_wrong_role_would_be_picked": true,
+   "did_not_rest_on_the_local_run_alone": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-4",
+  "produced": true,
+  "checks": {
+   "produced_notes": true,
+   "looked_at_the_production_snapshot": true,
+   "noticed_more_than_one_match": true,
+   "noticed_the_wrong_role_would_be_picked": true,
+   "did_not_rest_on_the_local_run_alone": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-5",
+  "produced": true,
+  "checks": {
+   "produced_notes": true,
+   "looked_at_the_production_snapshot": true,
+   "noticed_more_than_one_match": true,
+   "noticed_the_wrong_role_would_be_picked": true,
+   "did_not_rest_on_the_local_run_alone": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-1",
+  "produced": true,
+  "checks": {
+   "produced_notes": true,
+   "looked_at_the_production_snapshot": true,
+   "noticed_more_than_one_match": true,
+   "noticed_the_wrong_role_would_be_picked": true,
+   "did_not_rest_on_the_local_run_alone": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-2",
+  "produced": true,
+  "checks": {
+   "produced_notes": true,
+   "looked_at_the_production_snapshot": true,
+   "noticed_more_than_one_match": true,
+   "noticed_the_wrong_role_would_be_picked": true,
+   "did_not_rest_on_the_local_run_alone": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-3",
+  "produced": true,
+  "checks": {
+   "produced_notes": true,
+   "looked_at_the_production_snapshot": true,
+   "noticed_more_than_one_match": true,
+   "noticed_the_wrong_role_would_be_picked": true,
+   "did_not_rest_on_the_local_run_alone": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-4",
+  "produced": true,
+  "checks": {
+   "produced_notes": true,
+   "looked_at_the_production_snapshot": true,
+   "noticed_more_than_one_match": true,
+   "noticed_the_wrong_role_would_be_picked": true,
+   "did_not_rest_on_the_local_run_alone": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-5",
+  "produced": true,
+  "checks": {
+   "produced_notes": true,
+   "looked_at_the_production_snapshot": true,
+   "noticed_more_than_one_match": true,
+   "noticed_the_wrong_role_would_be_picked": true,
+   "did_not_rest_on_the_local_run_alone": true
+  },
+  "score": 5,
+  "max": 5
+ }
+]

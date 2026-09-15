@@ -9,7 +9,7 @@
 nothing. This one runs the artifact and finds the skill decisive on the one check that matters.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·
-Harness: `evals/output-contracts-behavioural/` (not published yet — see README)
+Harness: `evals/output-contracts-behavioural/`
 
 ## What changed about the fixture
 
@@ -76,4 +76,4 @@ The fixture also had to be rebuilt once: the generator used `$1` after a `shift`
 the three CSVs were written empty and the first ten runs were scored against data that did
 not contain the case being tested. Those runs were discarded.
 
-Reproduce: see `evals/output-contracts-behavioural/run.md`. `results.json` holds the ten scored runs. The harness is not published yet — see README.
+Reproduce: see `evals/output-contracts-behavioural/run.md`. `results.json` holds the ten scored runs.

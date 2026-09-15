@@ -1,0 +1,132 @@
+[
+ {
+  "run": "control-1",
+  "produced": true,
+  "checks": {
+   "produced_verdict": true,
+   "parses_as_json": true,
+   "verdict_is_negative": true,
+   "found_the_planted_bug": true,
+   "noted_the_tests_are_blind_to_it": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-2",
+  "produced": true,
+  "checks": {
+   "produced_verdict": true,
+   "parses_as_json": true,
+   "verdict_is_negative": true,
+   "found_the_planted_bug": true,
+   "noted_the_tests_are_blind_to_it": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-3",
+  "produced": true,
+  "checks": {
+   "produced_verdict": true,
+   "parses_as_json": true,
+   "verdict_is_negative": true,
+   "found_the_planted_bug": true,
+   "noted_the_tests_are_blind_to_it": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-4",
+  "produced": true,
+  "checks": {
+   "produced_verdict": true,
+   "parses_as_json": true,
+   "verdict_is_negative": true,
+   "found_the_planted_bug": true,
+   "noted_the_tests_are_blind_to_it": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-5",
+  "produced": true,
+  "checks": {
+   "produced_verdict": true,
+   "parses_as_json": true,
+   "verdict_is_negative": true,
+   "found_the_planted_bug": true,
+   "noted_the_tests_are_blind_to_it": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-1",
+  "produced": true,
+  "checks": {
+   "produced_verdict": true,
+   "parses_as_json": true,
+   "verdict_is_negative": true,
+   "found_the_planted_bug": true,
+   "noted_the_tests_are_blind_to_it": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-2",
+  "produced": true,
+  "checks": {
+   "produced_verdict": true,
+   "parses_as_json": true,
+   "verdict_is_negative": true,
+   "found_the_planted_bug": true,
+   "noted_the_tests_are_blind_to_it": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-3",
+  "produced": true,
+  "checks": {
+   "produced_verdict": true,
+   "parses_as_json": true,
+   "verdict_is_negative": true,
+   "found_the_planted_bug": true,
+   "noted_the_tests_are_blind_to_it": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-4",
+  "produced": true,
+  "checks": {
+   "produced_verdict": true,
+   "parses_as_json": true,
+   "verdict_is_negative": true,
+   "found_the_planted_bug": true,
+   "noted_the_tests_are_blind_to_it": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-5",
+  "produced": true,
+  "checks": {
+   "produced_verdict": true,
+   "parses_as_json": true,
+   "verdict_is_negative": true,
+   "found_the_planted_bug": true,
+   "noted_the_tests_are_blind_to_it": true
+  },
+  "score": 5,
+  "max": 5
+ }
+]

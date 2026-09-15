@@ -1,0 +1,162 @@
+[
+ {
+  "run": "control-1",
+  "produced": true,
+  "exit_broken": 1,
+  "exit_healthy": 0,
+  "first_line": "Last sync run: started_at=2026-09-14T00:00:00 result=success rows_synced=12 errors=0",
+  "checks": {
+   "monitor_runs": true,
+   "flags_the_broken_database": true,
+   "names_the_eight_left_out": true,
+   "stays_quiet_on_the_healthy_database": true,
+   "did_not_inherit_the_scope_filter": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-2",
+  "produced": true,
+  "exit_broken": 1,
+  "exit_healthy": 0,
+  "first_line": "Latest sync run: 2026-09-14T00:00:00 result=success rows_synced=12 errors=0",
+  "checks": {
+   "monitor_runs": true,
+   "flags_the_broken_database": true,
+   "names_the_eight_left_out": true,
+   "stays_quiet_on_the_healthy_database": true,
+   "did_not_inherit_the_scope_filter": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-3",
+  "produced": true,
+  "exit_broken": 1,
+  "exit_healthy": 0,
+  "first_line": "Latest sync run: 2026-09-14T00:00:00 result=success rows_synced=12 errors=0",
+  "checks": {
+   "monitor_runs": true,
+   "flags_the_broken_database": true,
+   "names_the_eight_left_out": true,
+   "stays_quiet_on_the_healthy_database": true,
+   "did_not_inherit_the_scope_filter": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-4",
+  "produced": true,
+  "exit_broken": 1,
+  "exit_healthy": 0,
+  "first_line": "integrations: 12/20 healthy",
+  "checks": {
+   "monitor_runs": true,
+   "flags_the_broken_database": true,
+   "names_the_eight_left_out": true,
+   "stays_quiet_on_the_healthy_database": true,
+   "did_not_inherit_the_scope_filter": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-5",
+  "produced": true,
+  "exit_broken": 1,
+  "exit_healthy": 0,
+  "first_line": "UNHEALTHY: nightly sync needs attention",
+  "checks": {
+   "monitor_runs": true,
+   "flags_the_broken_database": true,
+   "names_the_eight_left_out": true,
+   "stays_quiet_on_the_healthy_database": true,
+   "did_not_inherit_the_scope_filter": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-1",
+  "produced": true,
+  "exit_broken": 1,
+  "exit_healthy": 0,
+  "first_line": "NEEDS ATTENTION (1 issue(s)):",
+  "checks": {
+   "monitor_runs": true,
+   "flags_the_broken_database": true,
+   "names_the_eight_left_out": true,
+   "stays_quiet_on_the_healthy_database": true,
+   "did_not_inherit_the_scope_filter": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-2",
+  "produced": true,
+  "exit_broken": 1,
+  "exit_healthy": 0,
+  "first_line": "nightly sync: NEEDS ATTENTION",
+  "checks": {
+   "monitor_runs": true,
+   "flags_the_broken_database": true,
+   "names_the_eight_left_out": true,
+   "stays_quiet_on_the_healthy_database": true,
+   "did_not_inherit_the_scope_filter": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-3",
+  "produced": true,
+  "exit_broken": 1,
+  "exit_healthy": 0,
+  "first_line": "checked app.db: 20 integration row(s), 12 active",
+  "checks": {
+   "monitor_runs": true,
+   "flags_the_broken_database": true,
+   "names_the_eight_left_out": true,
+   "stays_quiet_on_the_healthy_database": true,
+   "did_not_inherit_the_scope_filter": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-4",
+  "produced": true,
+  "exit_broken": 1,
+  "exit_healthy": 0,
+  "first_line": "NIGHTLY SYNC: NEEDS ATTENTION",
+  "checks": {
+   "monitor_runs": true,
+   "flags_the_broken_database": true,
+   "names_the_eight_left_out": true,
+   "stays_quiet_on_the_healthy_database": true,
+   "did_not_inherit_the_scope_filter": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-5",
+  "produced": true,
+  "exit_broken": 1,
+  "exit_healthy": 0,
+  "first_line": "NEEDS ATTENTION (app.db):",
+  "checks": {
+   "monitor_runs": true,
+   "flags_the_broken_database": true,
+   "names_the_eight_left_out": true,
+   "stays_quiet_on_the_healthy_database": true,
+   "did_not_inherit_the_scope_filter": true
+  },
+  "score": 5,
+  "max": 5
+ }
+]
