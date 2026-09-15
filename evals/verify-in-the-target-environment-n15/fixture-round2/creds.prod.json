@@ -1,0 +1,39 @@
+{
+  "credentials": [
+    {
+      "alias": "global.supabase.founder_os",
+      "provider": "supabase",
+      "role": "service_role"
+    },
+    {
+      "alias": "athena.supabase.data_lake",
+      "provider": "supabase",
+      "role": "read_only"
+    },
+    {
+      "alias": "global.supabase.cockpit.main",
+      "provider": "supabase",
+      "role": "service_role"
+    },
+    {
+      "alias": "athena.supabase.main",
+      "provider": "supabase",
+      "role": "anon"
+    },
+    {
+      "alias": "athena.supabase.service_role",
+      "provider": "supabase",
+      "role": "service_role"
+    },
+    {
+      "alias": "global.openai.main",
+      "provider": "openai",
+      "role": "standard"
+    },
+    {
+      "alias": "global.gemini.main",
+      "provider": "gemini",
+      "role": "standard"
+    }
+  ]
+}

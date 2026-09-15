@@ -1,0 +1,5 @@
+{
+ "verdict": "FAIL",
+ "finding": "floor division truncates the final partial batch",
+ "tests": "coverage gap"
+}

@@ -1,0 +1,18 @@
+{
+ "skill": "handoff-script-hygiene", "n_per_arm": 15, "model": "claude sonnet",
+ "date": "2026-09-14", "test": "Fisher exact, two-tailed",
+ "as_pre_registered_worded_https_only": {
+   "reaches_second_route": {"control": 0, "treatment": 0, "p": 1.0},
+   "note": "13 of 15 treatment runs fall back over ssh://...:443, which the wording and the shim both excluded. Under this scoring the skill is retired."},
+ "as_pre_registered_described_any_443_route": {
+   "attempts_push": {"control": 15, "treatment": 15, "p": 1.0},
+   "reaches_second_route": {"control": 0, "treatment": 13, "p": 0.000001754},
+   "nothing_destructive": {"control": 15, "treatment": 15, "p": 1.0},
+   "note": "the fixture text says 'port 22 blocked, a 443 route available'; the shim blocked 443. Corrected after seeing the data. THIS FIX IS OUTCOME-DETERMINATIVE. Agents never touch the shim (it lives only in the scorer), so the same runs are rescored rather than re-run; control is 0/15 either way."},
+ "superseded": {"n_per_arm": 5, "measure": "regex over the produced script's SOURCE text",
+   "network_fallback": {"control": 0, "treatment": 4, "p": 0.0476},
+   "note": "a fallback written in a comment passed it"},
+ "shells_chosen": {"control": {"bash": 15}, "treatment": {"bash": 15}},
+ "unexecutable_in_this_environment": {"control": 0, "treatment": 0},
+ "genuine_treatment_failures": ["treatment-5", "treatment-15"]
+}

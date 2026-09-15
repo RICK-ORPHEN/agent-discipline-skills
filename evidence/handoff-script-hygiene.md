@@ -7,7 +7,7 @@
 **Does the skill change what the agent produces?** Measured, not asserted.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·
-Harness: `evals/handoff-script-hygiene/`
+Harness: `evals/handoff-script-hygiene/` (not published yet — see README)
 
 ## The task (identical in every arm)
 
@@ -71,8 +71,9 @@ One task, one model, five runs per arm. It shows that the skill adds the checks 
 does not already make, and that a nine-point rubric mostly saturates without it. It does
 not show a difference in real-world outcome, or that the effect holds on another model.
 
-Reproduce: `python3 evals/handoff-script-hygiene/run.md` — the harness, the prompt and the
-scorer are all in that directory, and `results.json` holds the fifteen scored runs.
+Reproduce: `evals/handoff-script-hygiene/` — the harness, the prompt and the scorer are all
+in that directory, and `results.json` holds the fifteen scored runs. The harness is
+not published yet — see README.
 
 ## The scorer was wrong first
 

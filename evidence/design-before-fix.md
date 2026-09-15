@@ -4,7 +4,7 @@
 reading the explanation.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·
-Harness: `evals/design-before-fix/`
+Harness: `evals/design-before-fix/` (not published yet — see README)
 
 ## The fixture
 
@@ -50,4 +50,4 @@ config value, a feature flag and a CDN rule, none of them in the repository. A f
 the intended path is not readable from the code at all is the harder version, and has not been
 built.
 
-Reproduce: see `evals/design-before-fix/run.md`. `results.json` holds the ten scored runs.
+Reproduce: see `evals/design-before-fix/run.md`. `results.json` holds the ten scored runs. The harness is not published yet — see README.

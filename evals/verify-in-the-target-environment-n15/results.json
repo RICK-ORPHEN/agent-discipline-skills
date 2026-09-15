@@ -1,0 +1,45 @@
+{
+ "round1": {
+  "fixture": "fixture-round1",
+  "n_per_arm": 15,
+  "stops_on_ambiguity": {
+   "control": 12,
+   "treatment": 15,
+   "p": 0.22414
+  },
+  "names_all_three": {
+   "control": 5,
+   "treatment": 15,
+   "p": 0.0002
+  },
+  "no_false_alarm": {
+   "control": 15,
+   "treatment": 15,
+   "p": 1.0
+  },
+  "verdict": "primary failed; fixture found to be order-dependent"
+ },
+ "round2": {
+  "fixture": "fixture-round2",
+  "n_per_arm": 15,
+  "stops_on_ambiguity": {
+   "control": 2,
+   "treatment": 15,
+   "p": 1.8e-06
+  },
+  "names_all_three": {
+   "control": 2,
+   "treatment": 15,
+   "p": 1.8e-06
+  },
+  "no_false_alarm": {
+   "control": 15,
+   "treatment": 15,
+   "p": 1.0
+  },
+  "verdict": "primary passed; this is the published number"
+ },
+ "test": "Fisher exact, two-tailed",
+ "model": "claude sonnet",
+ "date": "2026-09-14"
+}

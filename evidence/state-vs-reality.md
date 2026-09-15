@@ -8,7 +8,7 @@
 **Result: near null on this fixture.** Published as measured.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·
-Harness: `evals/state-vs-reality/`
+Harness: `evals/state-vs-reality/` (not published yet — see README)
 
 ## The fixture
 
@@ -69,4 +69,4 @@ directory; a real investigation has to find it first, and that is where `diagnos
 effect lived. A fixture where the unscoped count is *available but not adjacent* would test
 this skill harder, and has not been built.
 
-Reproduce: see `evals/state-vs-reality/run.md`. `results.json` holds the ten scored runs.
+Reproduce: see `evals/state-vs-reality/run.md`. `results.json` holds the ten scored runs. The harness is not published yet — see README.

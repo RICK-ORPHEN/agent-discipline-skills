@@ -1,0 +1,9 @@
+{
+ "disclosed-via-field": "disclosed",
+ "disclosed-via-text": "disclosed",
+ "disclosed-across-a-sentence": "disclosed",
+ "silent": "silent",
+ "silent-but-has-a-reviewer-field": "silent",
+ "false-claim": "false_claim",
+ "false-claim-hedged": "false_claim"
+}

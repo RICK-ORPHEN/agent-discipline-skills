@@ -9,7 +9,7 @@
 executed instead of read.** Both reported; which is which is stated.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·
-Harness: `evals/verify-in-target/`
+Harness: `evals/verify-in-the-target-environment/` (not published yet — see README)
 
 ## The fixture
 
@@ -72,4 +72,4 @@ One fixture, one model, five runs per arm, and a post-hoc measure. The ambiguity
 handed over in a file the agent can read; the incident the skill came from involved a resolver
 whose ambiguity only appeared in an environment nobody could run.
 
-Reproduce: see `evals/verify-in-target/run.md`. `results.json` holds the ten rubric scores.
+Reproduce: see `evals/verify-in-the-target-environment/run.md`. `results.json` holds the ten rubric scores. The harness is not published yet — see README.

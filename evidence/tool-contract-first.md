@@ -7,7 +7,7 @@
 **Result: at ceiling in both arms.** Published as measured.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·
-Harness: `evals/tool-contract-first/`
+Harness: `evals/tool-contract-first/` (not published yet — see README)
 
 ## The fixture
 
@@ -61,4 +61,4 @@ same trap three times in one day, under time pressure, with a plausible fix alre
 A single clean run against an obvious dry-run flag is the easy end of that. The measurement
 that would matter is a chain of tasks where the proxy is right four times and wrong the fifth.
 
-Reproduce: see `evals/tool-contract-first/run.md`. `results.json` holds the ten scored runs.
+Reproduce: see `evals/tool-contract-first/run.md`. `results.json` holds the ten scored runs. The harness is not published yet — see README.

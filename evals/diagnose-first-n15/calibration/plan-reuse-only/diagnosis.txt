@@ -1,0 +1,2 @@
+The cause is reuse_plan() in recovery.py: it returns a cached plan when the version matches,
+so M-5 keeps reusing a broken plan and never produces minutes. Fix: invalidate the plan.

@@ -1,0 +1,5 @@
+{
+ "verdict": "do not ship",
+ "note": "No independent model was available here, so this review is my own.",
+ "finding": "integer division drops the last partial batch"
+}
