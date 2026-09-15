@@ -1,0 +1,152 @@
+[
+ {
+  "run": "control-1",
+  "produced": true,
+  "checks": {
+   "produced_findings": true,
+   "named_3_or_more_faults": true,
+   "named_all_5_faults": true,
+   "named_the_34_row_fault": false,
+   "caught_silent_success": true,
+   "said_reported_case_is_not_the_whole": true
+  },
+  "signatures": 5,
+  "score": 5,
+  "max": 6
+ },
+ {
+  "run": "control-2",
+  "produced": true,
+  "checks": {
+   "produced_findings": true,
+   "named_3_or_more_faults": true,
+   "named_all_5_faults": false,
+   "named_the_34_row_fault": false,
+   "caught_silent_success": true,
+   "said_reported_case_is_not_the_whole": true
+  },
+  "signatures": 4,
+  "score": 4,
+  "max": 6
+ },
+ {
+  "run": "control-3",
+  "produced": true,
+  "checks": {
+   "produced_findings": true,
+   "named_3_or_more_faults": true,
+   "named_all_5_faults": true,
+   "named_the_34_row_fault": false,
+   "caught_silent_success": true,
+   "said_reported_case_is_not_the_whole": false
+  },
+  "signatures": 5,
+  "score": 4,
+  "max": 6
+ },
+ {
+  "run": "control-4",
+  "produced": true,
+  "checks": {
+   "produced_findings": true,
+   "named_3_or_more_faults": true,
+   "named_all_5_faults": false,
+   "named_the_34_row_fault": false,
+   "caught_silent_success": true,
+   "said_reported_case_is_not_the_whole": true
+  },
+  "signatures": 3,
+  "score": 4,
+  "max": 6
+ },
+ {
+  "run": "control-5",
+  "produced": true,
+  "checks": {
+   "produced_findings": true,
+   "named_3_or_more_faults": true,
+   "named_all_5_faults": false,
+   "named_the_34_row_fault": false,
+   "caught_silent_success": true,
+   "said_reported_case_is_not_the_whole": true
+  },
+  "signatures": 4,
+  "score": 4,
+  "max": 6
+ },
+ {
+  "run": "treatment-1",
+  "produced": true,
+  "checks": {
+   "produced_findings": true,
+   "named_3_or_more_faults": true,
+   "named_all_5_faults": true,
+   "named_the_34_row_fault": true,
+   "caught_silent_success": true,
+   "said_reported_case_is_not_the_whole": true
+  },
+  "signatures": 5,
+  "score": 6,
+  "max": 6
+ },
+ {
+  "run": "treatment-2",
+  "produced": true,
+  "checks": {
+   "produced_findings": true,
+   "named_3_or_more_faults": true,
+   "named_all_5_faults": true,
+   "named_the_34_row_fault": true,
+   "caught_silent_success": true,
+   "said_reported_case_is_not_the_whole": true
+  },
+  "signatures": 5,
+  "score": 6,
+  "max": 6
+ },
+ {
+  "run": "treatment-3",
+  "produced": true,
+  "checks": {
+   "produced_findings": true,
+   "named_3_or_more_faults": true,
+   "named_all_5_faults": true,
+   "named_the_34_row_fault": true,
+   "caught_silent_success": true,
+   "said_reported_case_is_not_the_whole": true
+  },
+  "signatures": 5,
+  "score": 6,
+  "max": 6
+ },
+ {
+  "run": "treatment-4",
+  "produced": true,
+  "checks": {
+   "produced_findings": true,
+   "named_3_or_more_faults": true,
+   "named_all_5_faults": true,
+   "named_the_34_row_fault": true,
+   "caught_silent_success": true,
+   "said_reported_case_is_not_the_whole": true
+  },
+  "signatures": 5,
+  "score": 6,
+  "max": 6
+ },
+ {
+  "run": "treatment-5",
+  "produced": true,
+  "checks": {
+   "produced_findings": true,
+   "named_3_or_more_faults": true,
+   "named_all_5_faults": true,
+   "named_the_34_row_fault": true,
+   "caught_silent_success": true,
+   "said_reported_case_is_not_the_whole": true
+  },
+  "signatures": 5,
+  "score": 6,
+  "max": 6
+ }
+]

@@ -1,0 +1,152 @@
+[
+ {
+  "run": "control-1",
+  "produced": true,
+  "checks": {
+   "produced_answer": true,
+   "says_sync_not_working": true,
+   "names_the_shared_filter": true,
+   "gives_the_real_number": false,
+   "calls_green_an_artifact_of_scope": true,
+   "notes_both_readers_share_it": true
+  },
+  "dismissed_decoy": false,
+  "score": 5,
+  "max": 6
+ },
+ {
+  "run": "control-2",
+  "produced": true,
+  "checks": {
+   "produced_answer": true,
+   "says_sync_not_working": true,
+   "names_the_shared_filter": true,
+   "gives_the_real_number": true,
+   "calls_green_an_artifact_of_scope": false,
+   "notes_both_readers_share_it": true
+  },
+  "dismissed_decoy": false,
+  "score": 5,
+  "max": 6
+ },
+ {
+  "run": "control-3",
+  "produced": true,
+  "checks": {
+   "produced_answer": true,
+   "says_sync_not_working": true,
+   "names_the_shared_filter": true,
+   "gives_the_real_number": false,
+   "calls_green_an_artifact_of_scope": true,
+   "notes_both_readers_share_it": true
+  },
+  "dismissed_decoy": true,
+  "score": 5,
+  "max": 6
+ },
+ {
+  "run": "control-4",
+  "produced": true,
+  "checks": {
+   "produced_answer": true,
+   "says_sync_not_working": true,
+   "names_the_shared_filter": true,
+   "gives_the_real_number": true,
+   "calls_green_an_artifact_of_scope": true,
+   "notes_both_readers_share_it": true
+  },
+  "dismissed_decoy": true,
+  "score": 6,
+  "max": 6
+ },
+ {
+  "run": "control-5",
+  "produced": true,
+  "checks": {
+   "produced_answer": true,
+   "says_sync_not_working": true,
+   "names_the_shared_filter": true,
+   "gives_the_real_number": true,
+   "calls_green_an_artifact_of_scope": false,
+   "notes_both_readers_share_it": true
+  },
+  "dismissed_decoy": true,
+  "score": 5,
+  "max": 6
+ },
+ {
+  "run": "treatment-1",
+  "produced": true,
+  "checks": {
+   "produced_answer": true,
+   "says_sync_not_working": true,
+   "names_the_shared_filter": true,
+   "gives_the_real_number": true,
+   "calls_green_an_artifact_of_scope": false,
+   "notes_both_readers_share_it": true
+  },
+  "dismissed_decoy": true,
+  "score": 5,
+  "max": 6
+ },
+ {
+  "run": "treatment-2",
+  "produced": true,
+  "checks": {
+   "produced_answer": true,
+   "says_sync_not_working": true,
+   "names_the_shared_filter": true,
+   "gives_the_real_number": true,
+   "calls_green_an_artifact_of_scope": false,
+   "notes_both_readers_share_it": true
+  },
+  "dismissed_decoy": true,
+  "score": 5,
+  "max": 6
+ },
+ {
+  "run": "treatment-3",
+  "produced": true,
+  "checks": {
+   "produced_answer": true,
+   "says_sync_not_working": true,
+   "names_the_shared_filter": true,
+   "gives_the_real_number": true,
+   "calls_green_an_artifact_of_scope": false,
+   "notes_both_readers_share_it": true
+  },
+  "dismissed_decoy": false,
+  "score": 5,
+  "max": 6
+ },
+ {
+  "run": "treatment-4",
+  "produced": true,
+  "checks": {
+   "produced_answer": true,
+   "says_sync_not_working": true,
+   "names_the_shared_filter": true,
+   "gives_the_real_number": true,
+   "calls_green_an_artifact_of_scope": true,
+   "notes_both_readers_share_it": true
+  },
+  "dismissed_decoy": false,
+  "score": 6,
+  "max": 6
+ },
+ {
+  "run": "treatment-5",
+  "produced": true,
+  "checks": {
+   "produced_answer": true,
+   "says_sync_not_working": true,
+   "names_the_shared_filter": true,
+   "gives_the_real_number": true,
+   "calls_green_an_artifact_of_scope": true,
+   "notes_both_readers_share_it": true
+  },
+  "dismissed_decoy": false,
+  "score": 6,
+  "max": 6
+ }
+]

@@ -3,7 +3,7 @@
 **Result: 5/5 in both arms. No difference at all.** Published as measured.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·
-Harness: `evals/sandbox-boundary/` (not published yet — see README)
+Harness: `evals/sandbox-boundary/`
 
 ## The fixture
 
@@ -61,4 +61,4 @@ commits deep in a worktree whose `.git` pointed at a path the user's machine did
 a state, not a decision. A fixture that reproduces a broken worktree, rather than asking for
 a handover, would test a different and harder part of the same skill, and has not been built.
 
-Reproduce: see `evals/sandbox-boundary/run.md`. `results.json` holds the ten scored runs. The harness is not published yet — see README.
+Reproduce: see `evals/sandbox-boundary/run.md`. `results.json` holds the ten scored runs.

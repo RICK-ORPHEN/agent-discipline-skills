@@ -7,7 +7,7 @@
 **Does the skill change what the agent produces?** Measured, not asserted.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·
-Harness: `evals/handoff-script-hygiene/` (not published yet — see README)
+Harness: `evals/handoff-script-hygiene/`
 
 ## The task (identical in every arm)
 
@@ -72,8 +72,7 @@ does not already make, and that a nine-point rubric mostly saturates without it.
 not show a difference in real-world outcome, or that the effect holds on another model.
 
 Reproduce: `evals/handoff-script-hygiene/` — the harness, the prompt and the scorer are all
-in that directory, and `results.json` holds the fifteen scored runs. The harness is
-not published yet — see README.
+in that directory, and `results.json` holds the fifteen scored runs.
 
 ## The scorer was wrong first
 

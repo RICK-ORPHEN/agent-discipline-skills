@@ -1,0 +1,142 @@
+[
+ {
+  "run": "control-1",
+  "produced": true,
+  "exit_code_on_broken_input": 0,
+  "checks": {
+   "report_runs": true,
+   "summary_is_valid_json": true,
+   "loss_is_visible_to_a_machine": false,
+   "no_false_alarm_on_clean_input": true,
+   "did_not_fabricate_the_missing_region": true
+  },
+  "score": 4,
+  "max": 5
+ },
+ {
+  "run": "control-2",
+  "produced": true,
+  "exit_code_on_broken_input": 0,
+  "checks": {
+   "report_runs": true,
+   "summary_is_valid_json": true,
+   "loss_is_visible_to_a_machine": false,
+   "no_false_alarm_on_clean_input": true,
+   "did_not_fabricate_the_missing_region": true
+  },
+  "score": 4,
+  "max": 5
+ },
+ {
+  "run": "control-3",
+  "produced": true,
+  "exit_code_on_broken_input": 0,
+  "checks": {
+   "report_runs": true,
+   "summary_is_valid_json": true,
+   "loss_is_visible_to_a_machine": false,
+   "no_false_alarm_on_clean_input": true,
+   "did_not_fabricate_the_missing_region": true
+  },
+  "score": 4,
+  "max": 5
+ },
+ {
+  "run": "control-4",
+  "produced": true,
+  "exit_code_on_broken_input": 0,
+  "checks": {
+   "report_runs": true,
+   "summary_is_valid_json": true,
+   "loss_is_visible_to_a_machine": true,
+   "no_false_alarm_on_clean_input": true,
+   "did_not_fabricate_the_missing_region": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-5",
+  "produced": true,
+  "exit_code_on_broken_input": 0,
+  "checks": {
+   "report_runs": true,
+   "summary_is_valid_json": true,
+   "loss_is_visible_to_a_machine": false,
+   "no_false_alarm_on_clean_input": true,
+   "did_not_fabricate_the_missing_region": true
+  },
+  "score": 4,
+  "max": 5
+ },
+ {
+  "run": "treatment-1",
+  "produced": true,
+  "exit_code_on_broken_input": 0,
+  "checks": {
+   "report_runs": true,
+   "summary_is_valid_json": true,
+   "loss_is_visible_to_a_machine": true,
+   "no_false_alarm_on_clean_input": true,
+   "did_not_fabricate_the_missing_region": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-2",
+  "produced": true,
+  "exit_code_on_broken_input": 0,
+  "checks": {
+   "report_runs": true,
+   "summary_is_valid_json": true,
+   "loss_is_visible_to_a_machine": true,
+   "no_false_alarm_on_clean_input": true,
+   "did_not_fabricate_the_missing_region": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-3",
+  "produced": true,
+  "exit_code_on_broken_input": 0,
+  "checks": {
+   "report_runs": true,
+   "summary_is_valid_json": true,
+   "loss_is_visible_to_a_machine": true,
+   "no_false_alarm_on_clean_input": true,
+   "did_not_fabricate_the_missing_region": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-4",
+  "produced": true,
+  "exit_code_on_broken_input": 0,
+  "checks": {
+   "report_runs": true,
+   "summary_is_valid_json": true,
+   "loss_is_visible_to_a_machine": true,
+   "no_false_alarm_on_clean_input": true,
+   "did_not_fabricate_the_missing_region": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-5",
+  "produced": true,
+  "exit_code_on_broken_input": 0,
+  "checks": {
+   "report_runs": true,
+   "summary_is_valid_json": true,
+   "loss_is_visible_to_a_machine": true,
+   "no_false_alarm_on_clean_input": true,
+   "did_not_fabricate_the_missing_region": true
+  },
+  "score": 5,
+  "max": 5
+ }
+]

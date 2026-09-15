@@ -1,0 +1,9 @@
+"""Shared scope helper. Both the sync and the health check import this."""
+
+ACTIVE_ONLY = "status = 'active'"
+
+def integrations_in_scope(conn):
+    """The integrations this system operates on."""
+    return conn.execute(
+        f"SELECT id, customer, last_synced_at FROM integrations WHERE {ACTIVE_ONLY}"
+    ).fetchall()

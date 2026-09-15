@@ -1,0 +1,132 @@
+[
+ {
+  "run": "control-1",
+  "produced": true,
+  "checks": {
+   "produced_handover": true,
+   "no_sandbox_path_anywhere": true,
+   "uses_the_users_path": true,
+   "no_cd_into_the_sandbox": true,
+   "commands_are_runnable_as_written": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-2",
+  "produced": true,
+  "checks": {
+   "produced_handover": true,
+   "no_sandbox_path_anywhere": true,
+   "uses_the_users_path": true,
+   "no_cd_into_the_sandbox": true,
+   "commands_are_runnable_as_written": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-3",
+  "produced": true,
+  "checks": {
+   "produced_handover": true,
+   "no_sandbox_path_anywhere": true,
+   "uses_the_users_path": true,
+   "no_cd_into_the_sandbox": true,
+   "commands_are_runnable_as_written": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-4",
+  "produced": true,
+  "checks": {
+   "produced_handover": true,
+   "no_sandbox_path_anywhere": true,
+   "uses_the_users_path": true,
+   "no_cd_into_the_sandbox": true,
+   "commands_are_runnable_as_written": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "control-5",
+  "produced": true,
+  "checks": {
+   "produced_handover": true,
+   "no_sandbox_path_anywhere": true,
+   "uses_the_users_path": true,
+   "no_cd_into_the_sandbox": true,
+   "commands_are_runnable_as_written": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-1",
+  "produced": true,
+  "checks": {
+   "produced_handover": true,
+   "no_sandbox_path_anywhere": true,
+   "uses_the_users_path": true,
+   "no_cd_into_the_sandbox": true,
+   "commands_are_runnable_as_written": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-2",
+  "produced": true,
+  "checks": {
+   "produced_handover": true,
+   "no_sandbox_path_anywhere": true,
+   "uses_the_users_path": true,
+   "no_cd_into_the_sandbox": true,
+   "commands_are_runnable_as_written": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-3",
+  "produced": true,
+  "checks": {
+   "produced_handover": true,
+   "no_sandbox_path_anywhere": true,
+   "uses_the_users_path": true,
+   "no_cd_into_the_sandbox": true,
+   "commands_are_runnable_as_written": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-4",
+  "produced": true,
+  "checks": {
+   "produced_handover": true,
+   "no_sandbox_path_anywhere": true,
+   "uses_the_users_path": true,
+   "no_cd_into_the_sandbox": true,
+   "commands_are_runnable_as_written": true
+  },
+  "score": 5,
+  "max": 5
+ },
+ {
+  "run": "treatment-5",
+  "produced": true,
+  "checks": {
+   "produced_handover": true,
+   "no_sandbox_path_anywhere": true,
+   "uses_the_users_path": true,
+   "no_cd_into_the_sandbox": true,
+   "commands_are_runnable_as_written": true
+  },
+  "score": 5,
+  "max": 5
+ }
+]

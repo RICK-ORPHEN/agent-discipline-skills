@@ -3,7 +3,7 @@
 **The null holds.** 4/4 in both arms, ten runs out of ten.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·
-Harness: `evals/tool-contract-first-behavioural/` (not published yet — see README)
+Harness: `evals/tool-contract-first-behavioural/`
 
 ## The fixture
 
@@ -62,4 +62,4 @@ path prefix with the run directories. Both runs were discarded, the scorers were
 the scratchpad entirely, and the two runs were repeated with an explicit instruction to stay
 inside the run directory.
 
-Reproduce: see `evals/tool-contract-first-behavioural/run.md`. `results.json` holds the ten scored runs. The harness is not published yet — see README.
+Reproduce: see `evals/tool-contract-first-behavioural/run.md`. `results.json` holds the ten scored runs.

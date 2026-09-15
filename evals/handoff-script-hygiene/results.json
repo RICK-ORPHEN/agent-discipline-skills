@@ -1,0 +1,293 @@
+[
+ {
+  "run": "control-1",
+  "file": "runs/control-1/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": true,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": false,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": false
+  },
+  "unverified": [],
+  "score": 7,
+  "max": 9
+ },
+ {
+  "run": "control-2",
+  "file": "runs/control-2/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": true,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": false,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": false
+  },
+  "unverified": [],
+  "score": 7,
+  "max": 9
+ },
+ {
+  "run": "control-3",
+  "file": "runs/control-3/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": true,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": false,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": true
+  },
+  "unverified": [],
+  "score": 8,
+  "max": 9
+ },
+ {
+  "run": "control-4",
+  "file": "runs/control-4/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": true,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": false,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": true
+  },
+  "unverified": [],
+  "score": 8,
+  "max": 9
+ },
+ {
+  "run": "control-5",
+  "file": "runs/control-5/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": true,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": false,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": true
+  },
+  "unverified": [],
+  "score": 8,
+  "max": 9
+ },
+ {
+  "run": "treatment-1",
+  "file": "runs/treatment-1/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": true,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": false,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": true
+  },
+  "unverified": [],
+  "score": 8,
+  "max": 9
+ },
+ {
+  "run": "treatment-2",
+  "file": "runs/treatment-2/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": false,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": true,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": true,
+   "zsh_glob_guarded": true
+  },
+  "unverified": [
+   "shebang_and_syntax (no zsh in this environment)"
+  ],
+  "score": 9,
+  "max": 10
+ },
+ {
+  "run": "treatment-3",
+  "file": "runs/treatment-3/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": false,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": true,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": true,
+   "zsh_glob_guarded": true
+  },
+  "unverified": [
+   "shebang_and_syntax (no zsh in this environment)"
+  ],
+  "score": 9,
+  "max": 10
+ },
+ {
+  "run": "treatment-4",
+  "file": "runs/treatment-4/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": true,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": true,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": true
+  },
+  "unverified": [],
+  "score": 9,
+  "max": 9
+ },
+ {
+  "run": "treatment-5",
+  "file": "runs/treatment-5/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": true,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": true,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": true
+  },
+  "unverified": [],
+  "score": 9,
+  "max": 9
+ },
+ {
+  "run": "v2-1",
+  "file": "runs/v2-1/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": true,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": true,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": true
+  },
+  "unverified": [],
+  "score": 9,
+  "max": 9
+ },
+ {
+  "run": "v2-2",
+  "file": "runs/v2-2/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": true,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": true,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": false
+  },
+  "unverified": [],
+  "score": 8,
+  "max": 9
+ },
+ {
+  "run": "v2-3",
+  "file": "runs/v2-3/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": true,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": false,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": false
+  },
+  "unverified": [],
+  "score": 7,
+  "max": 9
+ },
+ {
+  "run": "v2-4",
+  "file": "runs/v2-4/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": true,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": true,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": true
+  },
+  "unverified": [],
+  "score": 9,
+  "max": 9
+ },
+ {
+  "run": "v2-5",
+  "file": "runs/v2-5/deliver.command",
+  "produced": true,
+  "checks": {
+   "exec_bit": true,
+   "shebang_and_syntax": true,
+   "no_pager": true,
+   "stderr_kept": true,
+   "network_fallback": true,
+   "keeps_window_open": true,
+   "says_what_success_looks_like": true,
+   "no_destructive_ops": true,
+   "checks_preconditions": true
+  },
+  "unverified": [],
+  "score": 9,
+  "max": 9
+ }
+]

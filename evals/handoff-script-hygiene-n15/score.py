@@ -3,6 +3,9 @@
 import json, os, re, shutil, subprocess, sys, tempfile
 from pathlib import Path
 
+if len(sys.argv) < 3:
+    sys.exit("usage: score.py <run-dir> <git-shim>   "
+             "(the shim is required — it is what makes the blocked route real)")
 run = Path(sys.argv[1])
 shim_src = Path(sys.argv[2])
 out = {"run": run.name}

@@ -4,7 +4,7 @@
 shows no effect: 5/5 in both arms, every check.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·
-Harness: `evals/state-vs-reality-behavioural/` (not published yet — see README)
+Harness: `evals/state-vs-reality-behavioural/`
 
 ## What changed about the fixture
 
@@ -58,4 +58,4 @@ package, used by six call sites, with the filter three layers down, is a harder 
 the same test and has not been built. The first measurement's limitation applies too — the
 evidence is handed over in one directory rather than having to be found.
 
-Reproduce: see `evals/state-vs-reality-behavioural/run.md`. `results.json` holds the ten scored runs. The harness is not published yet — see README.
+Reproduce: see `evals/state-vs-reality-behavioural/run.md`. `results.json` holds the ten scored runs.
