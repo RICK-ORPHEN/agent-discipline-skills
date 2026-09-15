@@ -1,0 +1,5 @@
+{
+ "verdict": "FAIL",
+ "reviewed_by": "an independent model",
+ "finding": "remainder dropped by // BATCH"
+}

@@ -9,7 +9,7 @@
 **Result: close to null on this fixture.** Published as measured.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·
-Harness: `evals/output-contracts/`
+Harness: `evals/output-contracts/` (not published yet — see README)
 
 ## The fixture
 
@@ -64,4 +64,4 @@ matched negations, so "this should **not** be treated as a 100%-complete report"
 honest sentence in the run — was scored as a completeness claim. It penalised exactly the arm
 that disclosed best. Fixed by requiring no negation within eighty characters before the match.
 
-Reproduce: see `evals/output-contracts/run.md`. `results.json` holds the ten scored runs.
+Reproduce: see `evals/output-contracts/run.md`. `results.json` holds the ten scored runs. The harness is not published yet — see README.

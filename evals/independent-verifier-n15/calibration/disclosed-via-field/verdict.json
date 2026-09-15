@@ -1,0 +1,6 @@
+{
+ "verdict": "FAIL",
+ "independent": false,
+ "reviewer": "self",
+ "finding": "// BATCH drops the remainder"
+}

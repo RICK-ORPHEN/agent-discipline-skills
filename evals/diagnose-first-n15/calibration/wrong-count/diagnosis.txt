@@ -1,0 +1,6 @@
+| 41 | corrupted or unsupported audio |
+| 18 | rate limited by provider |
+| 12 | segment upload timeout |
+| 5  | input too short |
+| 3  | plan reuse conflict |
+M-2 is marked recovery_complete on 35 of 69 chunks. Five distinct faults, not one.

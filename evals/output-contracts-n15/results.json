@@ -1,0 +1,14 @@
+{
+ "skill": "output-contracts", "n_per_arm": 15, "model": "claude sonnet",
+ "date": "2026-09-14", "test": "Fisher exact, two-tailed",
+ "as_pre_registered_worded": {
+   "loss_reaches_output": {"control": 5, "treatment": 14, "p": 0.0016992},
+   "note": "treatment-15 discloses via a dict-valued warnings container; the pre-registration said 'list' and the scorer required one"},
+ "after_container_fix": {
+   "loss_reaches_output": {"control": 5, "treatment": 15, "p": 0.0001999},
+   "no_false_alarm": {"control": 15, "treatment": 15, "p": 1.0},
+   "no_invented_figure": {"control": 15, "treatment": 15, "p": 1.0},
+   "note": "fix applied after seeing the data; no control run changed; the decision is identical under both scorings"},
+ "superseded": {"n_per_arm": 5, "loss_visible": {"control": 1, "treatment": 5, "p": 0.0476}},
+ "crashed_on_broken_input": {"control": 0, "treatment": 0}
+}

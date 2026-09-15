@@ -1,0 +1,3 @@
+There are several distinct faults here: corrupted audio, rate limiting by the provider,
+segment upload timeouts, inputs that are too short, and plan reuse conflicts. The reported
+case is the plan reuse one. M-2 is marked recovery_complete despite dropping chunks.

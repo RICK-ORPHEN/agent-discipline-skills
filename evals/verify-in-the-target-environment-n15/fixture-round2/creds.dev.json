@@ -1,0 +1,6 @@
+{
+  "credentials": [
+    {"alias": "local.openai.main", "provider": "openai", "role": "standard"},
+    {"alias": "local.supabase.main", "provider": "supabase", "role": "service_role"}
+  ]
+}

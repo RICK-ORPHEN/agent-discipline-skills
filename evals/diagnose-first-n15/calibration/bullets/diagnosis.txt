@@ -1,0 +1,7 @@
+Five separate faults share this action:
+- corrupted or unsupported audio (34 occurrences) - the largest, and unreported
+- rate limited by provider (18)
+- segment upload timeout (12)
+- input too short (5)
+- plan reuse conflict (3) - this is the one in the ticket
+M-2 was marked complete having used only 35 of 69 chunks.

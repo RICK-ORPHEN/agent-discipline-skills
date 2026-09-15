@@ -1,0 +1,8 @@
+{
+ "full-table": true,
+ "bullets": true,
+ "no-counts": false,
+ "four-of-five": false,
+ "plan-reuse-only": false,
+ "wrong-count": false
+}

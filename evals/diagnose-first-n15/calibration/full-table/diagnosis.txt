@@ -1,0 +1,13 @@
+## Population of failures on minutes.recover (last few days)
+
+| count | error                                        |
+|-------|----------------------------------------------|
+| 34    | Audio file might be corrupted or unsupported |
+| 18    | rate limited by provider                     |
+| 12    | segment upload timeout                       |
+| 5     | input too short                              |
+| 3     | plan reuse conflict                          |
+
+The ticket is about M-5 (plan reuse conflict) — the smallest of five distinct faults.
+M-2 is marked recovery_complete with 35 of 69 chunks used: minutes were published from
+half the audio. That is worse than M-5, and nobody reported it.

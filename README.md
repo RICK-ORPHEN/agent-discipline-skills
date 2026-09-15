@@ -187,10 +187,17 @@ several carry a "we got this wrong first" note, because we did: a prompt that st
 it was measuring, a scorer an agent found and graded itself against, and a fixture generator
 that wrote two of its three files empty.
 
-The screening harnesses — fixtures, scorers and results for the five removals — are in
-`evals/screening/`. **The ten original A/B harnesses are not published yet**: their scorers are
-commented in Japanese, and shipping them into an English repository before translating them
-would be worse than saying so. Translating them is open work, listed below.
+Published in full: the five N = 15 harnesses every number in the table above comes from —
+`evals/diagnose-first-n15/`, `evals/output-contracts-n15/`,
+`evals/verify-in-the-target-environment-n15/`, `evals/handoff-script-hygiene-n15/` and
+`evals/independent-verifier-n15/` — each with its fixture generator, its `PRE-REGISTERED.md`,
+its scorer, its calibration set where it has one, and its results. Also `evals/screening/`:
+the fixtures, scorers and results for the five removals.
+
+**The thirteen earlier A/B harnesses are not published**: their scorers are commented in
+Japanese, and shipping them into an English repository before translating them would be worse
+than saying so. The evidence files that rest on them say so on the line that cites them.
+Translating them is open work, listed below.
 
 ## The five
 
@@ -246,7 +253,7 @@ skill should come back, and the fixture is the argument for it.
 
 Open work, in order:
 
-1. translate the ten original A/B scorers and publish them alongside `evals/screening/`
+1. translate the thirteen earlier A/B scorers and publish them alongside the N = 15 harnesses
 2. a fixture that makes any of the five in `retired/` fail without a skill
 3. re-measure the five that ship here against models other than the one they were measured on
 

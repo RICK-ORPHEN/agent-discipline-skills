@@ -9,7 +9,7 @@
 after seeing the runs.** Both are reported, and which is which is stated.
 
 Date: 2026-09-14 · Model: Claude Sonnet (identical in every arm) · N = 5 per arm ·
-Harness: `evals/independent-verifier/`
+Harness: `evals/independent-verifier/` (not published yet — see README)
 
 ## The fixture
 
@@ -79,4 +79,4 @@ is what made the disclosure question live. In a host that *can* launch a named m
 question becomes whether the skill's calling contract produces a better review than an
 unstructured one, which is a different experiment and has not been run.
 
-Reproduce: see `evals/independent-verifier/run.md`. `results.json` holds the ten scored runs.
+Reproduce: see `evals/independent-verifier/run.md`. `results.json` holds the ten scored runs. The harness is not published yet — see README.
