@@ -216,7 +216,14 @@ file and the record still agree.
 
 ## Install
 
-Copy the directories under `skills/` into wherever your agent reads skills from — for example:
+In Claude Code, add this repository as a plugin marketplace and install:
+
+```
+/plugin marketplace add RICK-ORPHEN/agent-discipline-skills
+/plugin install agent-discipline@agent-discipline-skills
+```
+
+Anywhere else, copy the directories under `skills/` into wherever your agent reads skills from:
 
 ```bash
 git clone https://github.com/RICK-ORPHEN/agent-discipline-skills.git
@@ -231,6 +238,19 @@ set contains no scripts at all.
 The format is `SKILL.md` with `name`, `description` and `allowed-tools` frontmatter, which many
 agent platforms read. Where a skill needs something platform-specific it says so in the body,
 and it stops loudly rather than pretending.
+
+Each skill also declares what it needs, in `compatibility:`:
+
+```yaml
+compatibility:
+  shell: true        # the body runs python3 / bash
+  questions: false   # the body puts choices to a human and waits
+  subagents: false   # the body launches another agent
+```
+
+**That is a statement about the file, not a claim about your client.** No pass/fail matrix for
+five clients is published here, because none was run. Four of the five need only a shell;
+`independent-verifier` is the one that needs a host able to launch a sub-agent.
 
 `verify-in-the-target-environment` assumes the agent's sandbox may be a different machine from
 the user's. If your agent runs directly on the user's machine, that framing simply does not
