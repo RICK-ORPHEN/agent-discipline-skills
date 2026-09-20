@@ -219,8 +219,8 @@ file and the record still agree.
 Copy the directories under `skills/` into wherever your agent reads skills from — for example:
 
 ```bash
-git clone https://github.com/<owner>/<repo>.git
-cp -R <repo>/skills/* ~/.claude/skills/
+git clone https://github.com/RICK-ORPHEN/agent-discipline-skills.git
+cp -R agent-discipline-skills/skills/* ~/.claude/skills/
 ```
 
 They are plain Markdown with YAML frontmatter. Nothing is executed at install time, and the
