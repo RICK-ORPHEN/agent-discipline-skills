@@ -1,0 +1,6 @@
+{
+  "name": "agent-discipline",
+  "version": "1.0.0",
+  "description": "Not how to build things, but how not to ship something broken while you build them. Five skills, each backed by an A/B measurement against a current model.",
+  "license": "Apache-2.0"
+}
