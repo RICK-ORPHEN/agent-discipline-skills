@@ -8,5 +8,15 @@
     "url": "https://github.com/RICK-ORPHEN"
   },
   "homepage": "https://github.com/RICK-ORPHEN/agent-discipline-skills",
-  "repository": "https://github.com/RICK-ORPHEN/agent-discipline-skills"
+  "repository": "https://github.com/RICK-ORPHEN/agent-discipline-skills",
+  "keywords": [
+    "agent-skills",
+    "coding-agents",
+    "verification",
+    "evals",
+    "code-quality"
+  ],
+  "documentationUrl": "https://github.com/RICK-ORPHEN/agent-discipline-skills#readme",
+  "supportUrl": "https://github.com/RICK-ORPHEN/agent-discipline-skills/issues",
+  "privacyPolicyUrl": "https://github.com/RICK-ORPHEN/agent-discipline-skills/blob/main/PRIVACY.md"
 }
