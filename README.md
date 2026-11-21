@@ -266,6 +266,19 @@ cannot, that skill will tell you and stop instead of substituting one.
 - No telemetry. Nothing phones home
 - **No skill without a measured effect.** That is what took this from ten to five
 
+## A note on this repository's history
+
+On 2026-11-21 the git history of this repository was rewritten once. Two things changed, in
+every commit:
+
+- the commit author e-mail was replaced with a GitHub no-reply address
+- three credential aliases in the `verify-in-the-target-environment` fixtures, scorer and
+  evidence files were renamed to fictional ones — including where run output is quoted. Roles,
+  file order and sort order are unchanged
+
+No fixture logic, scorer logic or reported number changed. Commit hashes from before that date
+no longer resolve.
+
 ## Contributing
 
 The most useful contribution is **a measured incident**: what was declared, what actually
