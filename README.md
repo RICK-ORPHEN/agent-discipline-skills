@@ -1,5 +1,7 @@
 # Agent Discipline Skills
 
+[日本語の説明はこちら → README.ja.md](README.ja.md)
+
 **A capable model notices the problem. The code it writes does not.**
 
 That is not a slogan — it is the result every rubric in this repository had to be rebuilt to
