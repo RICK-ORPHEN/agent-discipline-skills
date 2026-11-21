@@ -1,0 +1,6 @@
+{
+  "printers": [
+    {"name": "office-laser", "kind": "document", "state": "ready"},
+    {"name": "desk-label", "kind": "label", "state": "ready"}
+  ]
+}

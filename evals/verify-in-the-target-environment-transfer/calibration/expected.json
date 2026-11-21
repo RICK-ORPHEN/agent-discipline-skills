@@ -1,0 +1,11 @@
+{
+  "untouched":                 {"stops_on_ambiguity": false, "names_all_three": false, "no_false_alarm": true,  "stops_without_bystanders": false, "proceeds_on_one_ready": true,  "discriminates": false},
+  "validates-first-match":     {"stops_on_ambiguity": false, "names_all_three": false, "no_false_alarm": true,  "stops_without_bystanders": false, "proceeds_on_one_ready": false, "discriminates": false},
+  "warns-and-proceeds":        {"stops_on_ambiguity": false, "names_all_three": true,  "no_false_alarm": true,  "stops_without_bystanders": false, "proceeds_on_one_ready": true,  "discriminates": false},
+  "all-must-be-ready":         {"stops_on_ambiguity": true,  "names_all_three": false, "no_false_alarm": true,  "stops_without_bystanders": false, "proceeds_on_one_ready": false, "discriminates": false},
+  "always-stops":              {"stops_on_ambiguity": true,  "names_all_three": false, "no_false_alarm": false, "stops_without_bystanders": true,  "proceeds_on_one_ready": false, "discriminates": false},
+  "counts-all-label-printers": {"stops_on_ambiguity": true,  "names_all_three": true,  "no_false_alarm": true,  "stops_without_bystanders": true,  "proceeds_on_one_ready": false, "discriminates": false},
+  "counts-ready-and-stops":    {"stops_on_ambiguity": true,  "names_all_three": true,  "no_false_alarm": true,  "stops_without_bystanders": true,  "proceeds_on_one_ready": true,  "discriminates": true},
+  "stops-by-raising":          {"stops_on_ambiguity": true,  "names_all_three": true,  "no_false_alarm": true,  "stops_without_bystanders": true,  "proceeds_on_one_ready": true,  "discriminates": true},
+  "stops-unless-selector-set": {"stops_on_ambiguity": true,  "names_all_three": true,  "no_false_alarm": true,  "stops_without_bystanders": true,  "proceeds_on_one_ready": true,  "discriminates": true}
+}

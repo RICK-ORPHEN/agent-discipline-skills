@@ -1,0 +1,39 @@
+{
+  "printers": [
+    {
+      "name": "dock-east-label",
+      "kind": "label",
+      "state": "ready"
+    },
+    {
+      "name": "returns-label",
+      "kind": "label",
+      "state": "offline"
+    },
+    {
+      "name": "dock-west-label",
+      "kind": "label",
+      "state": "ready"
+    },
+    {
+      "name": "mezzanine-label",
+      "kind": "label",
+      "state": "paused"
+    },
+    {
+      "name": "packline-label",
+      "kind": "label",
+      "state": "ready"
+    },
+    {
+      "name": "frontoffice-laser",
+      "kind": "document",
+      "state": "ready"
+    },
+    {
+      "name": "invoices-laser",
+      "kind": "document",
+      "state": "ready"
+    }
+  ]
+}
