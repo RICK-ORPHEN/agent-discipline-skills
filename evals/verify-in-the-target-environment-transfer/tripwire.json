@@ -1,0 +1,17 @@
+{
+ "_about": "Paths in the repository clone whose access time moved past their modification time during a batch. See PRE-REGISTERED.md, 'Deviation'.",
+ "batches": [
+  {
+   "batch": 1,
+   "paths_read": []
+  },
+  {
+   "batch": 2,
+   "paths_read": []
+  },
+  {
+   "batch": 3,
+   "paths_read": []
+  }
+ ]
+}

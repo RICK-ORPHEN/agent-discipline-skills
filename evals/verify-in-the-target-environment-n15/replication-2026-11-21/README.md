@@ -103,3 +103,5 @@ shipped a job that picks the first. That is the README's opening line, counted.
 - `harness-blocks.json` — what each agent's closing report said was blocked
 - `posthoc.py`, `posthoc.json` — the two post-hoc questions
 - `summarise.py`, `results.json` — every number on this page, recomputed from the files above
+- `rescore.py` — rebuilds each run directory from `../fixture-round2`, runs `../score.py` on it and
+  compares with `scores.json`

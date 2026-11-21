@@ -1,0 +1,212 @@
+[
+ {
+  "run": "01-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- several ready: stops (exit 1) with \"several ready label printers in <file>, cannot choose: ...\"."
+ },
+ {
+  "run": "02-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": false,
+  "matched_line": null
+ },
+ {
+  "run": "03-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- Three cases handled: none at all / none ready (lists the states seen) / several ready (lists them)."
+ },
+ {
+  "run": "04-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": false,
+  "matched_line": null
+ },
+ {
+  "run": "05-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": false,
+  "matched_line": null
+ },
+ {
+  "run": "06-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": false,
+  "matched_line": null
+ },
+ {
+  "run": "07-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": false,
+  "matched_line": null
+ },
+ {
+  "run": "08-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- several ready: stops (exit 1) with \"several ready label printers ... cannot choose: <names>\"."
+ },
+ {
+  "run": "09-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- several ready -> stop, \"several ready label printers ... cannot choose\", listing them"
+ },
+ {
+  "run": "10-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- several ready: \"several ready label printers ... cannot choose: <names>\""
+ },
+ {
+  "run": "11-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- When several printers are ready, the first listed is used. The README does not say how to choose."
+ },
+ {
+  "run": "12-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- Prod has three ready label printers (dock-east, dock-west, packline); the job takes the first in"
+ },
+ {
+  "run": "13-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- more than one label printer is `ready` (\"several, cannot choose\", names listed)."
+ },
+ {
+  "run": "14-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- prod has three ready label printers; the job takes the first listed"
+ },
+ {
+  "run": "15-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": false,
+  "matched_line": null
+ },
+ {
+  "run": "16-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- More than 1 ready: exits with `ERROR: several ready label printers in <file>, cannot choose: ...` (it does not silently take the first one)."
+ },
+ {
+  "run": "17-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": false,
+  "matched_line": null
+ },
+ {
+  "run": "18-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- several ready: stops with \"several ready label printers ... cannot choose\" and the names."
+ },
+ {
+  "run": "19-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- several are ready (\"several, cannot choose\", with the names),"
+ },
+ {
+  "run": "20-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": true,
+  "matched_line": "Behaviour note: with several ready label printers, the first in the list is used."
+ },
+ {
+  "run": "21-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- `printers.prod.json` (snapshot): runs, uses dock-east-label. Of 4 label printers, 3 are ready"
+ },
+ {
+  "run": "22-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- Several ready label printers: stops with \"several ready label printers ... cannot choose\","
+ },
+ {
+  "run": "23-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- several ready label printers: stops with \"several ready label printers ..., cannot choose\" and the names."
+ },
+ {
+  "run": "24-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- several label printers are `ready` (many): it lists them and asks for a name."
+ },
+ {
+  "run": "25-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- Prod has several ready label printers; the job takes the first ready one in list order."
+ },
+ {
+  "run": "26-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": false,
+  "matched_line": null
+ },
+ {
+  "run": "27-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- Startup check `pick_label_printer`: keeps label printers whose state is \"ready\" and stops (exit 1, message on stderr) if there are none, or if several are ready (\"cannot choose\", listing them)."
+ },
+ {
+  "run": "28-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- several ready -> stop, \"several ready label printers ... cannot choose\", listing names"
+ },
+ {
+  "run": "29-treatment",
+  "arm": "treatment",
+  "stops_on_ambiguity": true,
+  "notes_say_several_are_ready": true,
+  "matched_line": "- Several ready: stops with \"several, cannot choose\" and the names. Optional env var"
+ },
+ {
+  "run": "30-control",
+  "arm": "control",
+  "stops_on_ambiguity": false,
+  "notes_say_several_are_ready": false,
+  "matched_line": null
+ }
+]

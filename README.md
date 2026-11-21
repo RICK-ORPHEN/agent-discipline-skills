@@ -55,7 +55,7 @@ against the hard case.
 |---|---|---|
 | `diagnose-first` | **large** | **0/15 produce the population — five faults, each with its count — 14/15 with** (p = 0.0000002). The largest effect here |
 | `output-contracts` | **large** | **5/15 without it emit a loss a machine can see, 15/15 with** (p = 0.0002). Scored on prose first: null. That null was wrong |
-| `verify-in-the-target-environment` | **large** | Both arms describe the problem. **2/15 without it stop at the ambiguity — the other 13 write a check that silently picks one of three write-capable credentials; 15/15 with it stop** (p = 0.000002) |
+| `verify-in-the-target-environment` | **large** | Both arms describe the problem. **2/15 without it stop at the ambiguity — the other 13 write a check that silently picks one of three write-capable credentials; 15/15 with it stop** (p = 0.000002). Re-run two months on: 1/15 vs 14/15. On a lookup the skill never mentions: **0/15 vs 15/15** (p = 0.00000001) |
 | `handoff-script-hygiene` | **large** | **0/15 reach a second route when port 22 is blocked, 13/15 with** (p = 0.000002). Measured by running the script against a `git` that fails for real |
 | `independent-verifier` | one axis only | Both arms found the bug, 15/15. **0/15 disclose in the artifact that no independent model reviewed it; 13/15 with** (p = 0.000002) |
 
@@ -118,6 +118,29 @@ fixture was fixed, the endpoint kept, both arms re-run: **2/15 vs 15/15, p = 0.0
 The pre-registration, including the round that failed, is published in full at
 `evals/verify-in-the-target-environment-n15/PRE-REGISTERED.md`.
 
+On 2026-11-21 it was measured twice more, by an AI assistant at the owner's request, on a later
+Sonnet. **The round-2 fixture, re-run as written: 1/15 vs 14/15** (p = 0.000003) — and the
+harness's permission layer interfered with twenty-five of the thirty runs, because `run.md` had
+never said what permissions the agents run under and the fixture names its files
+`creds.*.json`. Three runs ended with no edit at all and score as failures of whichever arm
+they sat in; the one treatment failure is one of them. The secondary did not reproduce: seven
+control runs name all three candidates, not two, and six of the seven do it in a warning on
+their way to picking the first.
+
+**Then a fixture the skill does not name.** The round-2 task is the case `SKILL.md` uses as its
+own example, which shows that an agent told about a failure avoids it and nothing more. Same
+task shape, label printers instead of credentials, measure and decision rule pushed before the
+first run: **0/15 vs 15/15** (p = 0.00000001). All fifteen control runs filter to ready
+printers, stop cleanly when none is ready, and print on the first of three. Six say in their
+notes that several were ready. None says it in the job's output.
+
+That is the nearest kind of transfer — new nouns on an identical structure — and with three
+label printers rather than three databases a reader may side with the control arm. Both caveats
+are in `evidence/verify-in-the-target-environment-transfer.md`, with the rest.
+
+This table's row for the skill was also wrong until that day. It read "2/15 without it then
+write a check that silently picks one of three". 2/15 is the number that stop.
+
 `output-contracts` has since had the same treatment, and its scorer had the same class of
 defect — the primary counted a plain crash as "the loss is visible", which is the opposite of
 what the skill asks for. Closed before the runs. At N = 15 the effect is larger
@@ -169,6 +192,12 @@ field read as a statement about independence; a real disclosure whose negation f
 sentence, where the pattern could not reach; and a check that was only ever described, never
 written. Four were caught before a number was reported, three were not.
 
+An eighth turned up on 2026-11-21, by following the rule below on a new fixture: "exits non-zero
+on the production snapshot" is passed by a check that stops because *some* candidate is
+unusable, and by one that counts candidates without looking at whether they qualify. Neither
+does the work. The round-2 fixture allows both. One run in its re-run took the second route;
+scored strictly, that re-run is 1/15 vs 13/15.
+
 The rule that came out of it: **write the endpoint, then write the two implementations that
 pass it without doing the work and the one that does the work but fails it, and run all three
 before any agent does.** The `independent-verifier` harness ships that calibration set as
@@ -192,7 +221,10 @@ Published in full: the five N = 15 harnesses every number in the table above com
 `evals/verify-in-the-target-environment-n15/`, `evals/handoff-script-hygiene-n15/` and
 `evals/independent-verifier-n15/` — each with its fixture generator, its `PRE-REGISTERED.md`,
 its scorer, its calibration set where it has one, and its results. Also `evals/screening/`:
-the fixtures, scorers and results for the five removals.
+the fixtures, scorers and results for the five removals. And
+`evals/verify-in-the-target-environment-transfer/`, with the `job.py` and notes of all thirty
+runs; the thirty from the round-2 re-run are in
+`evals/verify-in-the-target-environment-n15/replication-2026-11-21/`.
 
 The thirteen earlier harnesses are published too, as of 2026-09-15 — their scorers were
 commented in Japanese and were held back until the comments were translated. Nothing in the
@@ -292,8 +324,13 @@ skill should come back, and the fixture is the argument for it.
 Open work, in order:
 
 1. a fixture that makes any of the five in `retired/` fail without a skill
-2. re-measure the five that ship here against models other than the one they were measured on
-3. a behavioural scorer for the thirteen earlier harnesses — several of them still grade prose,
+2. re-measure the five that ship here against models other than the one they were measured on.
+   `verify-in-the-target-environment` has one re-run on a later Sonnet; the other four have
+   none here, and nothing in this repository was run on another vendor's model. Their `run.md` files have the same
+   gap its one had: no model, no agent type, no permission mode
+3. a transfer fixture for the other four — the same task shape in a domain the skill does not
+   name. Only `verify-in-the-target-environment` has one, and it is the nearest kind
+4. a behavioural scorer for the thirteen earlier harnesses — several of them still grade prose,
    which is the defect this catalog's own re-measurements kept finding
 
 ## Licence

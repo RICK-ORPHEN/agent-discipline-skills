@@ -1,0 +1,123 @@
+{
+ "_about": "What each agent's closing report said the harness blocked. Summarised by the orchestrator from those reports. Same categories as ../verify-in-the-target-environment-n15/replication-2026-11-21/harness-blocks.json.",
+ "01-treatment": {
+  "category": "worked_around",
+  "report": "a shell heredoc that rewrote job.py and made temp test files was denied; made the edit with the file tool, ran dev and prod"
+ },
+ "02-control": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "03-treatment": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "04-control": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "05-control": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "06-control": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "07-control": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "08-treatment": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "09-treatment": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "10-treatment": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "11-control": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "12-control": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "13-treatment": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "14-control": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "15-control": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "16-treatment": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "17-control": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "18-treatment": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "19-treatment": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "20-control": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "21-control": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "22-treatment": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "23-treatment": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "24-treatment": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "25-control": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "26-control": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "27-treatment": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "28-treatment": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "29-treatment": {
+  "category": "none_reported",
+  "report": ""
+ },
+ "30-control": {
+  "category": "none_reported",
+  "report": ""
+ }
+}

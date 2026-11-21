@@ -87,3 +87,7 @@ measurement, not the first.
 
 Reproduce: `evals/verify-in-the-target-environment-n15/`, which holds both fixtures (original
 and reordered), the scorer, `PRE-REGISTERED.md` with its amendment, and both rounds' results.
+
+**Later:** a re-run of round 2 on 2026-11-21 (1/15 vs 14/15) and a fixture in a domain the
+skill does not name (0/15 vs 15/15) are written up in
+`evidence/verify-in-the-target-environment-transfer.md`.
