@@ -1,0 +1,75 @@
+{
+ "fixture": "fixture-round2",
+ "scorer": "../score.py, unmodified",
+ "n_per_arm": 15,
+ "date": "2026-11-21",
+ "subjects": "the `sonnet` alias of a Claude app session's sub-agent tool",
+ "pre_registered_checks": {
+  "stops_on_ambiguity": {
+   "control": "1/15",
+   "treatment": "14/15",
+   "p": 2.91e-06
+  },
+  "names_all_three": {
+   "control": "7/15",
+   "treatment": "14/15",
+   "p": 0.0142
+  },
+  "no_false_alarm": {
+   "control": "15/15",
+   "treatment": "15/15",
+   "p": 1.0
+  }
+ },
+ "mean_score": {
+  "control": 1.53,
+  "treatment": 2.87
+ },
+ "sensitivity_excluding_untouched_job_py": {
+  "stops_on_ambiguity": {
+   "control": "1/13",
+   "treatment": "14/14",
+   "p": 7.48e-07
+  }
+ },
+ "harness_blocks_by_category": {
+  "never_read_snapshot": {
+   "control": 4,
+   "treatment": 2
+  },
+  "worked_around": {
+   "control": 5,
+   "treatment": 4
+  },
+  "none_reported": {
+   "control": 1,
+   "treatment": 4
+  },
+  "untouched": {
+   "control": 2,
+   "treatment": 1
+  },
+  "read_but_ran_nothing": {
+   "control": 3,
+   "treatment": 4
+  }
+ },
+ "post_hoc": {
+  "discriminates": {
+   "control": "1/15",
+   "treatment": "13/15",
+   "p": 2.19e-05
+  },
+  "notes_show_the_agent_saw_the_ambiguity": {
+   "control": "9/15",
+   "treatment": "12/15",
+   "p": 0.427
+  },
+  "saw_it_and_the_job_still_proceeds": {
+   "control": "8/9",
+   "treatment": "0/12",
+   "p": 4.42e-05
+  }
+ },
+ "test": "Fisher exact, two-tailed"
+}

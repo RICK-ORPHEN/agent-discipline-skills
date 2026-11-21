@@ -55,7 +55,7 @@ against the hard case.
 |---|---|---|
 | `diagnose-first` | **large** | **0/15 produce the population — five faults, each with its count — 14/15 with** (p = 0.0000002). The largest effect here |
 | `output-contracts` | **large** | **5/15 without it emit a loss a machine can see, 15/15 with** (p = 0.0002). Scored on prose first: null. That null was wrong |
-| `verify-in-the-target-environment` | **large** | Both arms describe the problem. **2/15 without it then write a check that silently picks one of three write-capable credentials; 15/15 with it stop** (p = 0.000002) |
+| `verify-in-the-target-environment` | **large** | Both arms describe the problem. **2/15 without it stop at the ambiguity — the other 13 write a check that silently picks one of three write-capable credentials; 15/15 with it stop** (p = 0.000002) |
 | `handoff-script-hygiene` | **large** | **0/15 reach a second route when port 22 is blocked, 13/15 with** (p = 0.000002). Measured by running the script against a `git` that fails for real |
 | `independent-verifier` | one axis only | Both arms found the bug, 15/15. **0/15 disclose in the artifact that no independent model reviewed it; 13/15 with** (p = 0.000002) |
 
