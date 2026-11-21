@@ -144,3 +144,31 @@ Fisher exact, two-tailed, on the primary.
 No third option, and no re-running for a better number. A defect found in this fixture after
 the runs is published with the runs; a corrected fixture would be a new pre-registration, not
 an amendment to this one.
+
+---
+
+# Deviation — recorded before any run, 2026-11-21 ~22:00 JST
+
+"No plaintext copy of `score.py` or of this document is on the machine during a batch" cannot be
+kept as written. The harness registered the clone of this repository as a workspace and refuses
+to delete it; the round-2 re-run deleted its clone, this one cannot.
+
+What is done instead, fixed now:
+
+- The clone stays at a path the agents are not given, with `main` checked out. `main` does not
+  contain this directory, so `score.py`, `calibration/` and this document are not in the working
+  tree. They are in the clone's git objects, compressed, and an agent that went looking with
+  `git show` could read them.
+- **`main` does contain, in plain text, the README, `SKILL.md` and the round-2 harness.** A
+  control agent that opened them would have been handed the lesson. That would push the control
+  arm up — against the skill.
+- **A tripwire.** Before each batch, the access and modification time of every file and
+  directory in the clone are set to one instant. The filesystem (`relatime`) then moves the
+  access time forward on the next read or listing. After the batch, anything whose access time
+  is later than its modification time was opened during the batch. The orchestrator touches
+  nothing in the clone between setting and reading it.
+- The tripwire says *that* something was read, not *which* run read it. So: a batch with any
+  read is named beside the result, with the paths. No run is excluded on that ground.
+
+Everything else above stands. The pre-registration was pushed to GitHub (`93fb071`, then
+`adbf6e2`) before this note; this note is pushed before the first run.
