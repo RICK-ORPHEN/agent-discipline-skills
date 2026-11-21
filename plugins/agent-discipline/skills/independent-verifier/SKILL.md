@@ -1,7 +1,7 @@
 ---
 name: independent-verifier
 license: Apache-2.0
-allowed-tools: Read, Grep, Glob, Task
+allowed-tools: Read, Grep, Glob
 description: "Run a single top-tier model as an independent, read-only reviewer and get findings back — no heavy ceremony. Works as a verifier (deliverable + acceptance criteria → verdict) and as an advisor (a question → an opinion with its grounds). Use when: someone asks for the sharpest single read, explicitly without a committee. Do NOT use when: the answer is genuinely contested and you need several models to argue it out. Never fires automatically."
 ---
 

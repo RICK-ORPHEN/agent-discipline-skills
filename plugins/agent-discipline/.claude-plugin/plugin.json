@@ -2,5 +2,11 @@
   "name": "agent-discipline",
   "version": "1.0.0",
   "description": "Not how to build things, but how not to ship something broken while you build them. Five skills, each backed by an A/B measurement against a current model.",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "author": {
+    "name": "RICK-ORPHEN",
+    "url": "https://github.com/RICK-ORPHEN"
+  },
+  "homepage": "https://github.com/RICK-ORPHEN/agent-discipline-skills",
+  "repository": "https://github.com/RICK-ORPHEN/agent-discipline-skills"
 }

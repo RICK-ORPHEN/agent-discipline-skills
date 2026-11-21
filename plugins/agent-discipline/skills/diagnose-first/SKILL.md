@@ -1,7 +1,7 @@
 ---
 name: diagnose-first
 license: Apache-2.0
-allowed-tools: Read, Grep, Glob, Bash
+allowed-tools: Read, Grep, Glob
 description: "Investigate a production symptom down to a named root cause BEFORE writing any fix. Use when: it does not get fixed, the same error keeps coming back, a previous fix did not change the observed behaviour, or you are about to jump on the first plausible cause. Do NOT use when: what you need is to re-read the product design."
 ---
 

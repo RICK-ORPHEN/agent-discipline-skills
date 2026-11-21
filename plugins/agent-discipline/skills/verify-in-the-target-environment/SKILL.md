@@ -1,7 +1,7 @@
 ---
 name: verify-in-the-target-environment
 license: Apache-2.0
-allowed-tools: Read, Grep, Glob, Bash
+allowed-tools: Read, Grep, Glob
 description: "The discipline of actually running a tool, or a checker you are about to wire into a gate, IN THE ENVIRONMENT THAT WILL RECEIVE IT, before you hand it over. Passing on your machine is not proof that it passes on theirs. Use when: you want to confirm against production-equivalent before distributing, or you are about to gate on a checker that has never succeeded. Do NOT use when: the question is how to write the script, or how to read a tool's contract."
 ---
 

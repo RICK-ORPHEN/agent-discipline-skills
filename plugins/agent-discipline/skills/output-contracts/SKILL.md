@@ -1,7 +1,7 @@
 ---
 name: output-contracts
 license: Apache-2.0
-allowed-tools: Read, Grep, Glob, Bash
+allowed-tools: Read, Grep, Glob
 description: "The reference standard for deciding whether something may be shipped, and whether a command may be run. Returns PASS / DEGRADED / FAIL at three gates: entry, mid-work (destructive and irreversible operations), and exit. Use when: you want a fixed yardstick for 'is this safe to run' or 'is this ready to hand over'. Do NOT use when: you need the procedure for a specific change — this ships criteria, not steps."
 ---
 

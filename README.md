@@ -2,6 +2,8 @@
 
 [日本語の説明はこちら → README.ja.md](README.ja.md)
 
+![On a task the skill never names, 0 of 15 runs without the skill stopped at the ambiguous choice and 15 of 15 with it did.](assets/results.png)
+
 **A capable model notices the problem. The code it writes does not.**
 
 That is not a slogan — it is the result every rubric in this repository had to be rebuilt to
@@ -266,6 +268,12 @@ cp -R agent-discipline-skills/skills/* ~/.claude/skills/
 
 They are plain Markdown with YAML frontmatter. Nothing is executed at install time, and the
 set contains no scripts at all.
+
+The copies under `plugins/agent-discipline/skills/` differ from `skills/` in one frontmatter
+line: `allowed-tools` is cut to `Read, Grep, Glob`, because a plugin directory will not list a
+plugin that pre-approves a shell or a sub-agent. Installed that way, the agent asks before it
+runs a command. The body of every skill is identical, and `skills/` holds the files as
+measured.
 
 ## Portability
 

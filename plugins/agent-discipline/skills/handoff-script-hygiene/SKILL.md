@@ -1,7 +1,7 @@
 ---
 name: handoff-script-hygiene
 license: Apache-2.0
-allowed-tools: Read, Grep, Glob, Bash
+allowed-tools: Read, Grep, Glob
 description: "The discipline for writing a script someone else will run, and for the moment you are about to ask them to run it again. A ledger of 19 incidents from making one person redo the same work five times, plus the checks that kill each one mechanically. Use when: you are about to borrow someone's hands. Do NOT use when: you can finish it yourself."
 ---
 
